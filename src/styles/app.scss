@@ -1,0 +1,43 @@
+@import './fonts.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+html {
+	font-size: 16px; // Root font size for rem values
+}
+
+body {
+	@extend .font-regular-14-18;
+	color: var(--color-black);
+}
+
+ul {
+	padding-left: 16px;
+}
+
+img {
+	display: block;
+}
+
+span,
+a {
+	display: inline-block;
+}
+
+a {
+	text-decoration: unset;
+}
