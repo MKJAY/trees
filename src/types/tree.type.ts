@@ -1,14 +1,22 @@
 export interface Tree {
 	id: string;
-	scientificNames: string[];
-	dutchNames: string[];
-	images: Image[];
+	scientificName: string;
+	otherScientificNames?: string[];
+	dutchName: Value;
+	otherDutchNames?: string[];
+	images?: Image[];
 	speciesSpecificCharacteristics: {
 		saltToleranceSchema?: Schema;
+		saltSprayToleranceSchema?: Schema;
 	};
 	determinationCharacteristics?: string[];
 	similarTrees?: SimilarTree[];
 	notes?: string;
+}
+
+export interface Value {
+	value: string;
+	isDisabled?: boolean;
 }
 
 export interface Image {
@@ -20,6 +28,7 @@ export interface Schema {
 	label: string;
 	blockLabels: string[];
 	activeBlockIndexes?: number[];
+	isDisabled?: boolean;
 }
 
 export interface SimilarTree {
