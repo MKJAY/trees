@@ -3,7 +3,6 @@ import { SALT_SPRAY_TOLERANCE_SCHEMA, SALT_TOLERANCE_SCHEMA } from './schemas.co
 
 export const TREE_SPECIES: TreeSpecies[] = [
 	{
-		id: '377516a5-cc75-4162-8f7a-fbcbb475bf7a',
 		scientificName: 'Abies alba',
 		dutchName: { value: 'Zilverspar' },
 		otherDutchNames: ['Zilverden'],
@@ -47,7 +46,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		],
 		similarTreeSpecies: [
 			{
-				id: '16c56a9e-972e-4891-bc7a-1fdd4f3fa52d',
+				scientificName: 'Abies grandis',
 				differences: [
 					'Kleinere naalden (1 - 3 cm lang) t.o.v. {scientificName} (3 - 5 cm lang)',
 					'Onbeharste knoppen t.o.v. {scientificName}'
@@ -56,7 +55,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		]
 	},
 	{
-		id: '16c56a9e-972e-4891-bc7a-1fdd4f3fa52d',
 		scientificName: 'Abies grandis',
 		dutchName: { value: 'Reuzenzilverspar' },
 		images: [
@@ -99,7 +97,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		],
 		similarTreeSpecies: [
 			{
-				id: '377516a5-cc75-4162-8f7a-fbcbb475bf7a',
+				scientificName: 'Abies alba',
 				differences: [
 					'Grotere naalden (3 - 5 cm lang) t.o.v. {scientificName} (1 - 3 cm lang)',
 					'Beharste knoppen t.o.v. {scientificName}'
@@ -108,7 +106,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		]
 	},
 	{
-		id: '24e23bd9-8a52-4ac5-8c4f-c7a8facc6fef',
 		scientificName: 'Acer campestre',
 		dutchName: { value: 'Veldesdoorn' },
 		otherDutchNames: ['Spaanse aak'],
@@ -124,7 +121,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'f6b02973-d725-4bb7-993b-c8f242aa8888',
 		scientificName: 'Robinia pseudoacacia',
 		dutchName: { value: 'Valse acacia' },
 		otherDutchNames: ['Gewone acacia', 'Schijnacacia', 'Witte acacia', 'Robinia'],
@@ -140,7 +136,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '888afce4-4592-4e26-bff0-890b7686c7d9',
 		scientificName: 'Quercus robur',
 		dutchName: { value: 'Zomereik' },
 		otherDutchNames: ['Inlandse eik'],
@@ -156,7 +151,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '28dff984-7531-4189-8a39-6fc42ba4c08c',
 		scientificName: 'Quercus petraea',
 		dutchName: { value: 'Wintereik' },
 		speciesSpecificCharacteristics: {
@@ -172,7 +166,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'ea0565c0-23b7-4722-afb1-9960e14a4302',
 		scientificName: 'Quercus rubra',
 		dutchName: { value: 'Amerikaanse eik' },
 		speciesSpecificCharacteristics: {
@@ -188,7 +181,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '303406fe-f2aa-4785-bb29-d03a522d6607',
 		scientificName: 'Alnus cordata',
 		dutchName: { value: 'Hartbladige els' },
 		speciesSpecificCharacteristics: {
@@ -204,7 +196,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '996730f9-2324-4c15-919d-0b4c6b0b2867',
 		scientificName: 'Alnus glutinosa',
 		dutchName: { value: 'Zwarte els' },
 		otherDutchNames: ['Gewone els'],
@@ -221,7 +212,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'a2e4ddc6-183c-4fd7-8ccd-e486b00e59f1',
 		scientificName: 'Alnus incana',
 		dutchName: { value: 'Witte els' },
 		otherDutchNames: ['Grijze els'],
@@ -237,12 +227,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'ad5f5128-3088-439b-8418-75c0ba577c3d',
 		scientificName: "Alnus x spaethii 'Spaeth'",
 		dutchName: {
 			value: 'Spaeths els',
 			isDisabled: true
 		},
+		crossedTreeSpeciesScientificNames: ['Alnus japonica', 'Alnus subcordata'],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -256,7 +246,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '5b329ef7-3907-4d2b-b01c-1ed688752092',
 		scientificName: 'Gleditsia triacanthos',
 		dutchName: { value: 'Valse Christusdoorn' },
 		speciesSpecificCharacteristics: {
@@ -271,10 +260,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '28433d91-e60f-4a7b-b75d-e751be2e3065',
 		scientificName: 'Platanus x hispanica',
 		otherScientificNames: ['Platanus x acerifolia'],
 		dutchName: { value: 'Gewone plataan' },
+		crossedTreeSpeciesScientificNames: ['Platanus orientalis', 'Platanus occidentalis'],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -287,7 +276,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '1573336e-89f0-434c-abbe-375a8f7a1765',
 		scientificName: 'Betula pendula',
 		dutchName: { value: 'Ruwe berk' },
 		speciesSpecificCharacteristics: {
@@ -303,7 +291,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'f9ec8611-8ce1-41cb-a5dd-4c6c669bc245',
 		scientificName: 'Styphnolobium japonicum',
 		otherScientificNames: ['Sophora japonica'],
 		dutchName: { value: 'Honingboom' },
@@ -321,7 +308,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '15d3a7c4-df2d-44c3-aabb-082a2798e305',
 		scientificName: 'Populus alba',
 		dutchName: { value: 'Witte abeel' },
 		speciesSpecificCharacteristics: {
@@ -336,7 +322,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '6ba43d3c-99cd-4496-9733-f404ff993782',
 		scientificName: 'Ginkgo biloba',
 		dutchName: { value: 'Japanse notenboom' },
 		speciesSpecificCharacteristics: {
@@ -352,7 +337,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'ea822d32-f3b0-4c68-9d59-f519ec5bdf09',
 		scientificName: 'Ailanthus altissima',
 		dutchName: { value: 'Hemelboom' },
 		speciesSpecificCharacteristics: {
@@ -368,7 +352,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '3e32e7b5-5705-4a64-a728-e193c326ff5f',
 		scientificName: 'Fraxinus excelsior',
 		dutchName: { value: 'Gewone es' },
 		speciesSpecificCharacteristics: {
@@ -383,7 +366,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'faac40fb-f513-4173-aa4b-1cd557a2f75e',
 		scientificName: 'Crataegus monogyna',
 		dutchName: { value: 'Eénstijlige meidoorn' },
 		speciesSpecificCharacteristics: {
@@ -399,7 +381,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '7206d5da-89fb-46af-894f-4e1ecf686cfb',
 		scientificName: 'Sorbus aucuparia',
 		dutchName: { value: 'Gewone lijsterbes' },
 		speciesSpecificCharacteristics: {
@@ -415,7 +396,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '21448385-3e87-4b64-b79e-c44124f86c65',
 		scientificName: 'Fagus sylvatica',
 		dutchName: { value: 'Gewone beuk' },
 		speciesSpecificCharacteristics: {
@@ -431,7 +411,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'c9bc7f6b-ad48-4545-bf9c-779bf29647a6',
 		scientificName: 'Carpinus betulus',
 		dutchName: { value: 'Gewone haagbeuk' },
 		otherDutchNames: ['Haagbeuk'],
@@ -448,7 +427,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '847a4925-9048-45ce-a037-701703152b95',
 		scientificName: 'Aesculus hippocastanum',
 		dutchName: { value: 'Witte paardenkastanje' },
 		otherDutchNames: ['Paardenkastanje'],
@@ -465,7 +443,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '4dc1a8f4-93ce-43e3-b2da-647f16063e76',
 		scientificName: 'Prunus avium',
 		dutchName: { value: 'Boskers' },
 		otherDutchNames: ['Zoete kers', 'Wilde kers'],
@@ -482,7 +459,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '95fa2467-74ff-49c7-9118-f0d72f83bcad',
 		scientificName: 'Salix alba',
 		dutchName: { value: 'Schietwilg' },
 		otherDutchNames: ['Gewone wilg', 'Witte wilg'],
@@ -499,7 +475,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '18d73b55-95ce-4a46-be69-e5e82ec9a2f2',
 		scientificName: 'Tilia cordata',
 		dutchName: { value: 'Winterlinde' },
 		otherDutchNames: ['Kleinbladige linde'],
@@ -516,7 +491,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '90d4708e-baa6-45cd-9777-71d6ec175d02',
 		scientificName: 'Tilia platyphyllos',
 		dutchName: { value: 'Zomerlinde' },
 		otherDutchNames: ['Grootbladige linde'],
@@ -533,7 +507,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '81fcda01-5552-4ae8-8ac3-492c8261dcd8',
 		scientificName: 'Tilia tomentosa',
 		dutchName: { value: 'Zilverlinde' },
 		speciesSpecificCharacteristics: {
@@ -549,10 +522,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'c779601f-9896-4f76-ae42-9c32edf90bf1',
 		scientificName: 'Tilia x europaea',
 		dutchName: { value: 'Hollandse linde' },
 		otherDutchNames: ['Gewone linde'],
+		crossedTreeSpeciesScientificNames: ['Tilia cordata', 'Tilia platyphyllos'],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -566,7 +539,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '390ee051-f7e9-4bc8-b10a-a3d37f41942c',
 		scientificName: 'Populus nigra',
 		dutchName: { value: 'Zwarte populier' },
 		otherDutchNames: ['Europese zwarte populier', 'Italiaanse populier'],
@@ -582,7 +554,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'ada545b3-3f3a-4c06-ac28-866febbf8cc1',
 		scientificName: 'Acer pseudoplatanus',
 		dutchName: { value: 'Gewone esdoorn' },
 		otherDutchNames: ['Bergesdoorn'],
@@ -598,7 +569,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '083c7538-3768-4104-88b6-772cda809927',
 		scientificName: 'Acer platanoides',
 		dutchName: { value: 'Noorse esdoorn' },
 		speciesSpecificCharacteristics: {
@@ -613,9 +583,9 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '2b0e46b5-ba31-42c5-bea2-9df222776fea',
 		scientificName: 'Aesculus x carnea',
 		dutchName: { value: 'Rode paardenkastanje' },
+		crossedTreeSpeciesScientificNames: ['Aesculus hippocastanum', 'Aesculus pavia'],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -629,7 +599,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: 'da2d4f57-7746-45c4-988d-e02d23820d97',
 		scientificName: 'Platanus orientalis',
 		dutchName: { value: 'Oosterse plataan' },
 		speciesSpecificCharacteristics: {
@@ -645,7 +614,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '8c29968a-a100-44ca-acb6-d78915092126',
 		scientificName: 'Acer negundo',
 		dutchName: { value: 'Vederesdoorn' },
 		otherDutchNames: ['Californische esdoorn'],
@@ -662,7 +630,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '1d55132b-a831-4987-9406-cfe893992d4c',
 		scientificName: 'Acer saccharinum',
 		dutchName: { value: 'Zilveresdoorn' },
 		otherDutchNames: ['Witte esdoorn'],
@@ -679,7 +646,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '3a34e92e-066c-439b-8363-15164d58aa72',
 		scientificName: 'Acer cappadocicum',
 		dutchName: { value: 'Kolchische esdoorn' },
 		speciesSpecificCharacteristics: {
@@ -696,12 +662,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '8de06c44-0743-4707-8655-5fcc08e38a35',
 		scientificName: 'Acer x freemanii',
-		dutchName: { 
+		dutchName: {
 			value: 'Freemans esdoorn',
 			isDisabled: true
 		},
+		crossedTreeSpeciesScientificNames: ['Acer rubrum', 'Acer saccharinum'],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -716,7 +682,6 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		}
 	},
 	{
-		id: '2adc0e72-a111-4e30-ba51-2ae6e5024794',
 		scientificName: 'Acer rubrum',
 		dutchName: { value: 'Rode esdoorn' },
 		speciesSpecificCharacteristics: {

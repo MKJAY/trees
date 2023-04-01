@@ -21,7 +21,7 @@
 	</div>
 	<div class="content">
 		{#each TREE_SPECIES as treeSpecies}
-			<TreeCard treeSpecies={treeSpecies} />
+			<TreeCard {treeSpecies} />
 		{/each}
 	</div>
 </div>

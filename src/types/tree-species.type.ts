@@ -1,10 +1,9 @@
 export interface TreeSpecies {
-	id: string;
 	scientificName: string;
 	otherScientificNames?: string[];
 	dutchName: Value;
 	otherDutchNames?: string[];
-	crossedTreeSpecies?: string[],
+	crossedTreeSpeciesScientificNames?: string[];
 	images?: Image[];
 	speciesSpecificCharacteristics: {
 		saltToleranceSchema?: Schema;
@@ -33,7 +32,7 @@ export interface Schema {
 }
 
 export interface SimilarTreeSpecies {
-	id: string;
+	scientificName: string;
 	differences: string[];
 }
 

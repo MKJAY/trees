@@ -6,18 +6,33 @@
 
 	export let treeSpecies: TreeSpecies;
 
-	const getTreeSpecies = (id: string): TreeSpecies | undefined => {
-		return TREE_SPECIES.find((treeSpecies: TreeSpecies): boolean => treeSpecies.id === id);
+	const getTreeSpecies = (scientificName: string): TreeSpecies | undefined => {
+		return TREE_SPECIES.find((treeSpecies: TreeSpecies): boolean => {
+			return treeSpecies.scientificName === scientificName;
+		});
+	};
+
+	const scrollToTreeSpeciesCard = (scientificName: string) => {
+		const treeSpeciesCard = document.getElementById(scientificName);
+
+		if (!treeSpeciesCard) return;
+
+		window.scrollTo({
+			top: treeSpeciesCard.offsetTop,
+			behavior: 'smooth'
+		});
 	};
 </script>
 
-<div id={treeSpecies.id} class="tree-species-card">
+<div id={treeSpecies.scientificName} class="tree-species-card">
 	<div class="main-content">
 		<div class="info">
 			<h1 class="font-bold-20-24">
 				<span>{treeSpecies.scientificName}</span>
 				{#if treeSpecies.otherScientificNames}
-					<span class="font-regular-16-20">{treeSpecies.otherScientificNames.sort().join(', ')}</span>
+					<span class="font-regular-16-20"
+						>{treeSpecies.otherScientificNames.sort().join(', ')}</span
+					>
 				{/if}
 			</h1>
 			<h3 class="font-regular-16-20">
@@ -26,6 +41,21 @@
 					<span class="font-regular-14-18">{treeSpecies.otherDutchNames.sort().join(', ')}</span>
 				{/if}
 			</h3>
+			{#if treeSpecies.crossedTreeSpeciesScientificNames}
+				<h5 class="font-regular-14-18">
+					{#each treeSpecies.crossedTreeSpeciesScientificNames.sort() as treeSpeciesScientificName, index}
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<span
+							class="clickable"
+							on:click={() => scrollToTreeSpeciesCard(treeSpeciesScientificName)}
+							>{treeSpeciesScientificName}</span
+						>
+						{#if index + 1 < treeSpecies.crossedTreeSpeciesScientificNames.length}
+							<span>&nbsp;&#38;&nbsp;</span>
+						{/if}
+					{/each}
+				</h5>
+			{/if}
 			<a
 				href={`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(
 					treeSpecies.scientificName.toLowerCase()
@@ -56,12 +86,11 @@
 				<span class="font-regular-16-20">Overeenkomende soorten</span>
 				<ul>
 					{#each treeSpecies.similarTreeSpecies as similarTreeSpecies}
-						{@const similarTreeScientificName = getTreeSpecies(similarTreeSpecies.id).scientificName}
-						<li class="font-bold-14-18">{similarTreeScientificName}</li>
+						<li class="font-bold-14-18">{similarTreeSpecies.scientificName}</li>
 						<ul>
 							{#each similarTreeSpecies.differences as difference}
 								<li>
-									{difference.replace('{scientificName}', similarTreeScientificName)}
+									{difference.replace('{scientificName}', similarTreeSpecies.scientificName)}
 								</li>
 							{/each}
 						</ul>
@@ -127,8 +156,13 @@
 				}
 
 				h3,
+				h5,
 				a {
 					margin-top: 4px;
+				}
+
+				h5 {
+					display: flex;
 				}
 			}
 
