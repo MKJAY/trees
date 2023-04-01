@@ -643,5 +643,92 @@ export const TREES: Tree[] = [
 				isDisabled: true
 			}
 		}
+	},
+	{
+		id: '8c29968a-a100-44ca-acb6-d78915092126',
+		scientificName: 'Acer negundo',
+		dutchName: { value: 'Vederesdoorn' },
+		otherDutchNames: ['Californische esdoorn'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		id: '1d55132b-a831-4987-9406-cfe893992d4c',
+		scientificName: 'Acer saccharinum',
+		dutchName: { value: 'Zilveresdoorn' },
+		otherDutchNames: ['Witte esdoorn'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		id: '3a34e92e-066c-439b-8363-15164d58aa72',
+		scientificName: 'Acer cappadocicum',
+		dutchName: { value: 'Kolchische esdoorn' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		id: '8de06c44-0743-4707-8655-5fcc08e38a35',
+		scientificName: 'Acer x freemanii',
+		dutchName: { 
+			value: 'Freemans esdoorn',
+			isDisabled: true
+		},
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		id: '2adc0e72-a111-4e30-ba51-2ae6e5024794',
+		scientificName: 'Acer rubrum',
+		dutchName: { value: 'Rode esdoorn' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
 	}
 ];
