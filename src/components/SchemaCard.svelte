@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Schema } from '../types/tree.type';
+	import type { Schema } from '../types/tree-species.type';
 
 	export let schema: Schema;
 </script>
