@@ -1,26 +1,27 @@
 <script lang="ts">
-	import TreeCard from '../components/TreeCard.svelte';
-	import { TREES } from '../constants/trees.constant';
-	import type { Tree } from '../types/tree.type';
+	import TreeCard from '../components/TreeSpeciesCard.svelte';
+	import { TREE_SPECIES } from '../constants/tree-species.constant';
+	import type { TreeSpecies } from '../types/tree-species.type';
 
-	TREES.sort((a: Tree, b: Tree): number => {
+	TREE_SPECIES.sort((a: TreeSpecies, b: TreeSpecies): number => {
 		return a.scientificName.localeCompare(b.scientificName);
 	});
 
-	const idsAreUnique = new Set(TREES.map((tree: Tree): string => tree.id)).size === TREES.length;
+	const treeSpeciesIds = TREE_SPECIES.map((treeSpecies: TreeSpecies): string => treeSpecies.id);
+	const idsAreUnique = new Set(treeSpeciesIds).size === TREE_SPECIES.length;
 </script>
 
 <div class="container">
 	<div class="header">
 		<h1 class="font-regular-30-34">Bomen</h1>
 		<div class="info">
-			<span>Aantal: {TREES.length}</span>
+			<span>Aantal: {TREE_SPECIES.length}</span>
 			<span>Unieke ID's? {idsAreUnique ? 'ja' : 'nee'}</span>
 		</div>
 	</div>
 	<div class="content">
-		{#each TREES as tree}
-			<TreeCard {tree} />
+		{#each TREE_SPECIES as treeSpecies}
+			<TreeCard treeSpecies={treeSpecies} />
 		{/each}
 	</div>
 </div>
@@ -45,7 +46,7 @@
 		}
 
 		.content {
-			:global(.tree-card):not(:first-of-type) {
+			:global(.tree-species-card):not(:first-of-type) {
 				margin-top: 16px;
 			}
 		}

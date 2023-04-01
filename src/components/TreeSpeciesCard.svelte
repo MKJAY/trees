@@ -1,65 +1,65 @@
 <script lang="ts">
-	import { TREES } from '../constants/trees.constant';
-	import type { Tree } from '../types/tree.type';
+	import { TREE_SPECIES } from '../constants/tree-species.constant';
+	import type { TreeSpecies } from '../types/tree-species.type';
 	import ImageCard from './ImageCard.svelte';
 	import SchemaCard from './SchemaCard.svelte';
 
-	export let tree: Tree;
+	export let treeSpecies: TreeSpecies;
 
-	const getTree = (id: string): Tree | undefined => {
-		return TREES.find((tree: Tree): boolean => tree.id === id);
+	const getTreeSpecies = (id: string): TreeSpecies | undefined => {
+		return TREE_SPECIES.find((treeSpecies: TreeSpecies): boolean => treeSpecies.id === id);
 	};
 </script>
 
-<div id={tree.id} class="tree-card">
+<div id={treeSpecies.id} class="tree-species-card">
 	<div class="main-content">
 		<div class="info">
 			<h1 class="font-bold-20-24">
-				<span>{tree.scientificName}</span>
-				{#if tree.otherScientificNames}
-					<span class="font-regular-16-20">{tree.otherScientificNames.sort().join(', ')}</span>
+				<span>{treeSpecies.scientificName}</span>
+				{#if treeSpecies.otherScientificNames}
+					<span class="font-regular-16-20">{treeSpecies.otherScientificNames.sort().join(', ')}</span>
 				{/if}
 			</h1>
 			<h3 class="font-regular-16-20">
-				<span class:disabled={tree.dutchName.isDisabled}>{tree.dutchName.value}</span>
-				{#if tree.otherDutchNames}
-					<span class="font-regular-14-18">{tree.otherDutchNames.sort().join(', ')}</span>
+				<span class:disabled={treeSpecies.dutchName.isDisabled}>{treeSpecies.dutchName.value}</span>
+				{#if treeSpecies.otherDutchNames}
+					<span class="font-regular-14-18">{treeSpecies.otherDutchNames.sort().join(', ')}</span>
 				{/if}
 			</h3>
 			<a
 				href={`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(
-					tree.scientificName.toLowerCase()
+					treeSpecies.scientificName.toLowerCase()
 				)}`}
 				target="_blank"
 				rel="noreferrer">Google afbeeldingen</a
 			>
 		</div>
-		{#if tree.images}
+		{#if treeSpecies.images}
 			<div class="images">
-				{#each tree.images as image}
+				{#each treeSpecies.images as image}
 					<ImageCard {image} />
 				{/each}
 			</div>
 		{/if}
-		{#if tree.determinationCharacteristics}
+		{#if treeSpecies.determinationCharacteristics}
 			<div class="determination-characteristics">
 				<span class="font-regular-16-20">Determinatiekenmerken</span>
 				<ul>
-					{#each tree.determinationCharacteristics as determinationCharacteristic}
+					{#each treeSpecies.determinationCharacteristics as determinationCharacteristic}
 						<li>{determinationCharacteristic}</li>
 					{/each}
 				</ul>
 			</div>
 		{/if}
-		{#if tree.similarTrees}
-			<div class="similar-trees">
+		{#if treeSpecies.similarTreeSpecies}
+			<div class="similar-tree-species">
 				<span class="font-regular-16-20">Overeenkomende soorten</span>
 				<ul>
-					{#each tree.similarTrees as similarTree}
-						{@const similarTreeScientificName = getTree(similarTree.id).scientificName}
+					{#each treeSpecies.similarTreeSpecies as similarTreeSpecies}
+						{@const similarTreeScientificName = getTreeSpecies(similarTreeSpecies.id).scientificName}
 						<li class="font-bold-14-18">{similarTreeScientificName}</li>
 						<ul>
-							{#each similarTree.differences as difference}
+							{#each similarTreeSpecies.differences as difference}
 								<li>
 									{difference.replace('{scientificName}', similarTreeScientificName)}
 								</li>
@@ -69,17 +69,17 @@
 				</ul>
 			</div>
 		{/if}
-		{#if tree.notes}
+		{#if treeSpecies.notes}
 			<div class="notes">
 				<span class="font-regular-16-20">Notities</span>
-				<p>{tree.notes}</p>
+				<p>{treeSpecies.notes}</p>
 			</div>
 		{/if}
 	</div>
 	<div class="side-content">
-		{#if tree.speciesSpecificCharacteristics}
+		{#if treeSpecies.speciesSpecificCharacteristics}
 			<div class="species-specific-characteristics">
-				{#each Object.entries(tree.speciesSpecificCharacteristics) as [_, schema]}
+				{#each Object.entries(treeSpecies.speciesSpecificCharacteristics) as [_, schema]}
 					{#if schema}
 						<SchemaCard {schema} />
 					{/if}
@@ -90,7 +90,7 @@
 </div>
 
 <style lang="scss">
-	.tree-card {
+	.tree-species-card {
 		display: flex;
 		padding: 16px;
 		border: 1px solid var(--color-black);
@@ -144,7 +144,7 @@
 				}
 			}
 
-			.similar-trees {
+			.similar-tree-species {
 				ul {
 					margin-top: 4px;
 				}

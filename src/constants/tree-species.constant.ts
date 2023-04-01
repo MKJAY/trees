@@ -1,7 +1,7 @@
-import type { Tree } from '../types/tree.type';
+import type { TreeSpecies } from '../types/tree-species.type';
 import { SALT_SPRAY_TOLERANCE_SCHEMA, SALT_TOLERANCE_SCHEMA } from './schemas.constant';
 
-export const TREES: Tree[] = [
+export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		id: '377516a5-cc75-4162-8f7a-fbcbb475bf7a',
 		scientificName: 'Abies alba',
@@ -45,7 +45,7 @@ export const TREES: Tree[] = [
 			'Twee wit-grijze strepen aan de onderkant van de naalden',
 			'Citrusgeur bij het kneuzen van de naalden'
 		],
-		similarTrees: [
+		similarTreeSpecies: [
 			{
 				id: '16c56a9e-972e-4891-bc7a-1fdd4f3fa52d',
 				differences: [
@@ -97,7 +97,7 @@ export const TREES: Tree[] = [
 			'Twee wit-grijze strepen aan de onderkant van de naalden',
 			'Citrusgeur bij het kneuzen van de naalden en twijgen'
 		],
-		similarTrees: [
+		similarTreeSpecies: [
 			{
 				id: '377516a5-cc75-4162-8f7a-fbcbb475bf7a',
 				differences: [

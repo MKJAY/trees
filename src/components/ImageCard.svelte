@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Image } from '../types/tree.type';
+	import type { Image } from '../types/tree-species.type';
 
 	export let image: Image;
 </script>
