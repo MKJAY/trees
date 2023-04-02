@@ -6,17 +6,13 @@
 	TREE_SPECIES.sort((a: TreeSpecies, b: TreeSpecies): number => {
 		return a.scientificName.localeCompare(b.scientificName);
 	});
-
-	const treeSpeciesIds = TREE_SPECIES.map((treeSpecies: TreeSpecies): string => treeSpecies.id);
-	const idsAreUnique = new Set(treeSpeciesIds).size === TREE_SPECIES.length;
 </script>
 
 <div class="container">
 	<div class="header">
-		<h1 class="font-regular-30-34">Bomen</h1>
+		<h1 class="font-regular-30-34">Boomsoorten</h1>
 		<div class="info">
 			<span>Aantal: {TREE_SPECIES.length}</span>
-			<span>Unieke ID's? {idsAreUnique ? 'ja' : 'nee'}</span>
 		</div>
 	</div>
 	<div class="content">
