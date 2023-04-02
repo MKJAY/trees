@@ -202,12 +202,6 @@
 				margin-top: 16px;
 			}
 
-			@media only screen and (max-width: 576px) {
-				& > div {
-					margin-top: 16px;
-				}
-			}
-
 			.species-specific-characteristics {
 				:global(.schema-card):not(:first-of-type) {
 					margin-top: 16px;
