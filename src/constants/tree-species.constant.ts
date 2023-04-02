@@ -709,7 +709,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
-		},
+		}
 	},
 	{
 		scientificName: 'Betula nigra',

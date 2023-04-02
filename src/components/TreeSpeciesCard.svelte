@@ -121,6 +121,7 @@
 <style lang="scss">
 	.tree-species-card {
 		display: flex;
+		gap: 16px;
 		padding: 16px;
 		border: 1px solid var(--color-black);
 		border-radius: 8px;
@@ -170,6 +171,17 @@
 				display: flex;
 				flex-wrap: wrap;
 				gap: 16px;
+
+				@media only screen and (max-width: 576px) {
+					flex-direction: column;
+					flex-wrap: unset;
+
+					:global(.image-card > img) {
+						width: 100%;
+						height: auto;
+						aspect-ratio: 1/1;
+					}
+				}
 			}
 
 			.determination-characteristics {
