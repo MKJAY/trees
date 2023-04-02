@@ -741,5 +741,118 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			}
 		}
+	},
+	{
+		scientificName: 'Castanea sativa',
+		dutchName: { value: 'Tamme kastanje' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Catalpa bignonioides',
+		dutchName: { value: 'Trompetboom' },
+		otherDutchNames: ['Grote trompetboom'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Cedrus libani',
+		dutchName: { value: 'Libanonceder' },
+		otherDutchNames: ['Atlasceder'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		},
+	},
+	{
+		scientificName: 'Cercidiphyllum japonicum',
+		dutchName: { value: 'Katsuraboom' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Chamaecyparis lawsoniana',
+		dutchName: { value: 'Californische cypres' },
+		otherDutchNames: ['Schijncypres'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Corylus colurna',
+		dutchName: { value: 'Boomhazelaar' },
+		otherDutchNames: ['Turkse hazelaar'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Davidia involucrata',
+		dutchName: { value: 'Vaantjesboom ' },
+		otherDutchNames: ['Zakdoekenboom', 'Luierboom'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
 	}
 ];
