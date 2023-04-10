@@ -854,5 +854,116 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			}
 		}
+	},
+	{
+		scientificName: 'Fraxinus angustifolia',
+		dutchName: { value: 'Smalbladige es' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			}
+		}
+	},
+	{
+		scientificName: 'Fraxinus ornus',
+		dutchName: { value: 'Pluimes' },
+		otherDutchNames: ['Bloem-es', 'Manna-es'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Fraxinus americana',
+		dutchName: { value: 'Amerikaanse es' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Juglans regia',
+		dutchName: { value: 'Gewone walnoot' },
+		otherDutchNames: ['Gewone notelaar', 'Okkernoot'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Juglans nigra',
+		dutchName: { value: 'Zwarte walnoot' },
+		otherDutchNames: ['Zwarte notelaar'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Koelreuteria paniculata',
+		dutchName: { value: 'Lampionboom' },
+		otherDutchNames: ['Blazenboom', 'Chinese vernisboom', 'Gele zeepboom'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Laburnum x watereri',
+		dutchName: { value: 'Goude regen' },
+		crossedTreeSpeciesScientificNames: ['Laburnum anagyroides', 'Laburnum alpinum'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
 	}
 ];
