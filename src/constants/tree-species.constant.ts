@@ -788,7 +788,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
-		},
+		}
 	},
 	{
 		scientificName: 'Cercidiphyllum japonicum',
@@ -958,6 +958,166 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Larix decidua',
+		dutchName: { value: 'Europese lork' },
+		otherDutchNames: ['Europese lariks'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Liquidambar styraciflua',
+		dutchName: { value: 'Amberboom' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			}
+		}
+	},
+	{
+		scientificName: 'Liriodendron tulipifera',
+		dutchName: { value: 'Tulpenboom' },
+		otherDutchNames: ['Amerikaanse tulpenboom'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Magnolia kobus',
+		dutchName: {
+			value: 'Beverboom',
+			isDisabled: true
+		},
+		otherDutchNames: ['Noordelijke Japanse magnolia'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Malus sylvestris',
+		dutchName: { value: 'Wilde appel' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Metasequoia glyptostroboides',
+		dutchName: { value: 'Watercypres' },
+		otherDutchNames: ['Chinese watercypres'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Morus alba',
+		dutchName: { value: 'Witte moerbei' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			}
+		}
+	},
+	{
+		scientificName: 'Morus nigra',
+		dutchName: { value: 'Zwarte moerbei' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			}
+		}
+	},
+	{
+		scientificName: 'Nothofagus antarctica',
+		dutchName: { value: 'Schijnbeuk' },
+		otherDutchNames: ['Zuidelijke beuk'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Ostrya carpinifolia',
+		dutchName: { value: 'Europese hopbeuk' },
+		otherDutchNames: ['Hopbeuk'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
