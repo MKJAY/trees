@@ -1370,5 +1370,117 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			}
 		}
+	},
+	{
+		scientificName: 'Quercus cerris',
+		dutchName: { value: 'Moseik' },
+		otherDutchNames: ['Turkse eik'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Quercus frainetto',
+		dutchName: { value: 'Hongaarse eik' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Quercus palustris',
+		dutchName: { value: 'Moeraseik' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Quercus ilex',
+		dutchName: { value: 'Steeneik' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Quercus phellos',
+		dutchName: { value: 'Wilgbladige eik' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: "Quercus x turneri 'Pseudoturneri'",
+		dutchName: { value: 'Turners eik' },
+		otherDutchNames: ['Oostenrijkse eik'],
+		crossedTreeSpeciesScientificNames: ['Quercus ilex', 'Quercus robur'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Quercus x hispanica',
+		dutchName: {
+			value: 'Spaanse eik',
+			isDisabled: true
+		},
+		crossedTreeSpeciesScientificNames: ['Quercus cerris', 'Quercus suber'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
 	}
 ];
