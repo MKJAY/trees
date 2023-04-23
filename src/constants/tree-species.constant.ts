@@ -1258,5 +1258,117 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			}
 		}
+	},
+	{
+		scientificName: 'Prunus cerasifera',
+		dutchName: { value: 'Kerspruim' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Prunus serrulata',
+		dutchName: { value: 'Japanse sierkers' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Prunus padus',
+		dutchName: { value: 'Europese vogelkers' },
+		otherDutchNames: ['Gewone vogelkers'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Prunus serotina',
+		dutchName: { value: 'Amerikaanse vogelkers' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Pseudotsuga menziesii',
+		dutchName: { value: 'Douglasspar' },
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Pterocarya fraxinifolia',
+		dutchName: { value: 'Kaukasische vleugelnoot' },
+		otherDutchNames: ['Gewone vleugelnoot'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
+	},
+	{
+		scientificName: 'Pyrus calleryana',
+		dutchName: {
+			value: 'Sierpeer',
+			isDisabled: true
+		},
+		otherDutchNames: ['Callery-peer'],
+		speciesSpecificCharacteristics: {
+			saltToleranceSchema: {
+				...SALT_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			}
+		}
 	}
 ];
