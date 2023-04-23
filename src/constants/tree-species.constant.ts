@@ -1355,10 +1355,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Pyrus calleryana',
 		dutchName: {
-			value: 'Sierpeer',
+			value: 'Callery-peer',
 			isDisabled: true
 		},
-		otherDutchNames: ['Callery-peer'],
+		otherDutchNames: ['Sierpeer'],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1485,8 +1485,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	},
 	{
 		scientificName: "Salix x sepulcralis 'Chrysocoma'",
-		dutchName: { value: 'Treurwilg' },
-		otherDutchNames: ['Gele treurwilg'],
+		dutchName: { value: 'Gele treurwilg' },
+		otherDutchNames: ['Treurwilg'],
 		crossedTreeSpeciesScientificNames: ['Salix babylonica', "Salix alba 'Vitellina'"],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
