@@ -101,7 +101,11 @@
 		{#if treeSpecies.notes}
 			<div class="notes">
 				<span class="font-regular-16-20">Notities</span>
-				<p>{treeSpecies.notes}</p>
+				<ul>
+					{#each treeSpecies.notes as note}
+						<li>{note}</li>
+					{/each}
+				</ul>
 			</div>
 		{/if}
 	</div>

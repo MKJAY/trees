@@ -11,7 +11,7 @@ export interface TreeSpecies {
 	};
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];
-	notes?: string;
+	notes?: string[];
 }
 
 export interface Value {

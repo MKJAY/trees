@@ -109,6 +109,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Acer campestre',
 		dutchName: { value: 'Veldesdoorn' },
 		otherDutchNames: ['Spaanse aak'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/acer-campestre/leaf-1.jpeg'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -430,6 +436,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Aesculus hippocastanum',
 		dutchName: { value: 'Witte paardenkastanje' },
 		otherDutchNames: ['Paardenkastanje'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/aesculus-hippocastanum/leaf-1.webp'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -557,6 +569,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Acer pseudoplatanus',
 		dutchName: { value: 'Gewone esdoorn' },
 		otherDutchNames: ['Bergesdoorn'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/acer-pseudoplatanus/leaf-1.jpg'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -571,6 +589,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Acer platanoides',
 		dutchName: { value: 'Noorse esdoorn' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/acer-platanoides/leaf-1.jpeg'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -586,6 +610,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Aesculus x carnea',
 		dutchName: { value: 'Rode paardenkastanje' },
 		crossedTreeSpeciesScientificNames: ['Aesculus hippocastanum', 'Aesculus pavia'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/aesculus-x-carnea/leaf-1.jpg'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -617,6 +647,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Acer negundo',
 		dutchName: { value: 'Vederesdoorn' },
 		otherDutchNames: ['Californische esdoorn'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/acer-negundo/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/acer-negundo/leaf-2.jfif'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -627,12 +667,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
-		}
+		},
+		notes: [
+			'De enige soort binnen het Acer geslacht dat een geveerd blad heeft.',
+			'Het blad kan drie of vijf deelblaadjes hebben.',
+			'Het blad kan wel of niet diepgesneden zijn.',
+		]
 	},
 	{
 		scientificName: 'Acer saccharinum',
 		dutchName: { value: 'Zilveresdoorn' },
 		otherDutchNames: ['Witte esdoorn'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/acer-saccharinum/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -648,6 +699,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Acer cappadocicum',
 		dutchName: { value: 'Kolchische esdoorn' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/acer-cappadocicum/leaf-1.jpeg'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -668,6 +725,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			isDisabled: true
 		},
 		crossedTreeSpeciesScientificNames: ['Acer rubrum', 'Acer saccharinum'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/acer-x-freemanii/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/acer-x-freemanii/leaf-2.jpg'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -684,6 +751,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Acer rubrum',
 		dutchName: { value: 'Rode esdoorn' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/acer-rubrum/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/acer-rubrum/leaf-2.webp'
+			},
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
