@@ -1,5 +1,9 @@
 import type { TreeSpecies } from '../types/tree-species.type';
-import { SALT_SPRAY_TOLERANCE_SCHEMA, SALT_TOLERANCE_SCHEMA } from './schemas.constant';
+import {
+	AIR_POLLUTION_TOLERANCE_SCHEMA,
+	SALT_SPRAY_TOLERANCE_SCHEMA,
+	SALT_TOLERANCE_SCHEMA
+} from './schemas.constant';
 
 export const TREE_SPECIES: TreeSpecies[] = [
 	{
@@ -36,6 +40,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -89,6 +98,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		},
 		determinationCharacteristics: [
@@ -113,7 +127,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/acer-campestre/leaf-1.jpeg'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -123,6 +137,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -138,6 +157,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -153,6 +177,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -166,6 +195,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -183,6 +217,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -196,6 +235,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -214,6 +258,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -229,6 +278,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -248,6 +302,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -262,6 +321,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -278,6 +342,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
 			}
 		}
 	},
@@ -291,6 +359,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -310,6 +383,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -324,6 +402,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -339,6 +422,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
 			}
 		}
 	},
@@ -352,6 +439,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -368,6 +460,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -381,6 +478,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -398,6 +500,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -411,6 +518,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -429,6 +541,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -440,7 +557,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/aesculus-hippocastanum/leaf-1.webp'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -449,6 +566,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -467,6 +589,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -481,6 +608,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -499,6 +631,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -515,6 +652,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -528,6 +670,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -547,6 +694,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -562,6 +714,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -573,7 +730,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/acer-pseudoplatanus/leaf-1.jpg'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -583,6 +740,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -593,7 +755,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/acer-platanoides/leaf-1.jpeg'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -603,6 +765,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -614,7 +781,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/aesculus-x-carnea/leaf-1.jpg'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -623,6 +790,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -640,6 +812,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
 			}
 		}
 	},
@@ -655,7 +831,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad #2',
 				source: 'images/acer-negundo/leaf-2.jfif'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -666,12 +842,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		},
 		notes: [
-			'De enige soort binnen het Acer geslacht dat een geveerd blad heeft.',
-			'Het blad kan drie of vijf deelblaadjes hebben.',
-			'Het blad kan wel of niet diepgesneden zijn.',
+			'Het blad kan 3, 5 of 7 deelblaadjes hebben.',
+			'Het blad kan wel of niet diepgesneden zijn.'
 		]
 	},
 	{
@@ -693,6 +873,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -703,7 +888,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/acer-cappadocicum/leaf-1.jpeg'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -713,6 +898,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -733,7 +923,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad #2',
 				source: 'images/acer-x-freemanii/leaf-2.jpg'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -743,6 +933,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -759,7 +954,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad #2',
 				source: 'images/acer-rubrum/leaf-2.webp'
-			},
+			}
 		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
@@ -768,6 +963,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -783,6 +983,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -801,6 +1006,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -814,6 +1024,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -831,6 +1046,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -845,6 +1065,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -864,6 +1089,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -877,6 +1107,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -896,6 +1131,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -910,6 +1150,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -929,6 +1174,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -943,6 +1193,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -959,6 +1214,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -972,6 +1232,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -990,6 +1255,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1004,6 +1274,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1023,6 +1298,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1038,6 +1318,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1057,6 +1342,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1071,6 +1361,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1085,6 +1380,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1106,6 +1406,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1120,6 +1425,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1139,6 +1449,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1153,6 +1468,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1167,6 +1487,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1182,6 +1507,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1200,6 +1530,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1214,6 +1549,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1233,6 +1573,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1249,6 +1594,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1263,6 +1613,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1282,6 +1637,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1299,6 +1659,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1313,6 +1678,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1333,6 +1703,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1348,6 +1723,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1361,6 +1741,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1379,6 +1764,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1392,6 +1782,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1409,6 +1804,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1424,6 +1824,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1445,6 +1850,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1459,6 +1869,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1476,6 +1891,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1489,6 +1909,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1506,6 +1931,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1519,6 +1949,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1536,6 +1971,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1557,6 +1997,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1572,6 +2017,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1590,6 +2040,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1603,6 +2058,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1620,6 +2080,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1633,6 +2098,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1652,6 +2122,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1665,6 +2140,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1683,6 +2163,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
 			}
 		}
 	},
@@ -1697,6 +2182,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
@@ -1714,6 +2204,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			airPollution: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}

@@ -15,3 +15,8 @@ export const SALT_SPRAY_TOLERANCE_SCHEMA: Schema = {
 	label: 'Spatzouttolerantie tegen de stam',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
+
+export const AIR_POLLUTION_TOLERANCE_SCHEMA: Schema = {
+	label: 'Luchtvervuilingtolerantie',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
