@@ -8,7 +8,10 @@ export interface TreeSpecies {
 	speciesSpecificCharacteristics: {
 		saltToleranceSchema?: Schema;
 		saltSprayToleranceSchema?: Schema;
-		airPollution?: Schema;
+		coastWindTolerance?: Schema;
+		windthrowTolerance?: Schema;
+		branchBreakTolerance?: Schema;
+		airPollutionTolerance?: Schema;
 	};
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];

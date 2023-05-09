@@ -7,16 +7,31 @@ const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 ];
 
 export const SALT_TOLERANCE_SCHEMA: Schema = {
-	label: 'Zouttolerantie in de wortelzone',
+	label: 'Tolerantie voor zout in de wortelzone',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
 
 export const SALT_SPRAY_TOLERANCE_SCHEMA: Schema = {
-	label: 'Spatzouttolerantie tegen de stam',
+	label: 'Tolerantie voor spatzout tegen de stam',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
+
+export const COAST_WIND_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor zeewind',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
+
+export const WINDTHROW_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor windworp',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
+
+export const BRANCH_BREAK_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor takbreuk',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
 
 export const AIR_POLLUTION_TOLERANCE_SCHEMA: Schema = {
-	label: 'Luchtvervuilingtolerantie',
+	label: 'Tolerantie voor luchtvervuiling',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
