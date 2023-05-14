@@ -1358,7 +1358,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			{
 				label: 'Blad #2',
-				source: 'images/acer-negundo/leaf-2.jfif'
+				source: 'images/acer-negundo/leaf-2.jpg'
 			}
 		],
 		speciesSpecificCharacteristics: {
@@ -1394,7 +1394,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		},
 		notes: [
 			'Het blad kan 3, 5 of 7 deelblaadjes hebben.',
-			'Het blad kan wel of niet diepgesneden zijn.'
+			'De deelblaadjes kunnen meer of minder ingesneden zijn.'
 		]
 	},
 	{
@@ -1542,6 +1542,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad #2',
 				source: 'images/acer-rubrum/leaf-2.webp'
+			},
+			{
+				label: 'Blad #3',
+				source: 'images/acer-rubrum/leaf-3.JPG'
 			}
 		],
 		speciesSpecificCharacteristics: {
