@@ -336,6 +336,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Alnus cordata',
 		dutchName: { value: 'Hartbladige els' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/alnus-cordata/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -372,6 +378,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Alnus glutinosa',
 		dutchName: { value: 'Zwarte els' },
 		otherDutchNames: ['Gewone els'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/alnus-glutinosa/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/alnus-glutinosa/leaf-2.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -408,6 +424,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Alnus incana',
 		dutchName: { value: 'Witte els' },
 		otherDutchNames: ['Grijze els'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/alnus-incana/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -446,6 +468,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			isDisabled: true
 		},
 		crossedTreeSpeciesScientificNames: ['Alnus japonica', 'Alnus subcordata'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/alnus-x-spaethii-\'spaeth\'/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -690,6 +718,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Ailanthus altissima',
 		dutchName: { value: 'Hemelboom' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/ailanthus-altissima/leaf-1.png'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
