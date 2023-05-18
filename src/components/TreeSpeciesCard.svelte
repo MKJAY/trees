@@ -48,8 +48,9 @@
 						<span
 							class="clickable"
 							on:click={() => scrollToTreeSpeciesCard(treeSpeciesScientificName)}
-							>{treeSpeciesScientificName}</span
 						>
+							{treeSpeciesScientificName}
+						</span>
 						{#if index + 1 < treeSpecies.crossedTreeSpeciesScientificNames.length}
 							<span>&nbsp;&#38;&nbsp;</span>
 						{/if}
@@ -86,7 +87,13 @@
 				<span class="font-regular-16-20">Overeenkomende soorten</span>
 				<ul>
 					{#each treeSpecies.similarTreeSpecies as similarTreeSpecies}
-						<li class="font-bold-14-18">{similarTreeSpecies.scientificName}</li>
+						<!-- svelte-ignore a11y-click-events-have-key-events -->
+						<li
+							class="font-bold-14-18 clickable"
+							on:click={() => scrollToTreeSpeciesCard(similarTreeSpecies.scientificName)}
+						>
+							{similarTreeSpecies.scientificName}
+						</li>
 						<ul>
 							{#each similarTreeSpecies.differences as difference}
 								<li>
