@@ -173,8 +173,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -353,8 +352,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -399,8 +397,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -674,8 +671,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -782,8 +778,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -1004,13 +999,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			branchBreakTolerance: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			airPollutionTolerance: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
@@ -1071,8 +1064,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -1142,8 +1134,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -1214,8 +1205,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -1255,8 +1245,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -2058,8 +2047,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -2816,8 +2804,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -2852,8 +2839,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -2890,8 +2876,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -2930,13 +2915,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			branchBreakTolerance: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			airPollutionTolerance: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
@@ -2965,13 +2948,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			branchBreakTolerance: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			airPollutionTolerance: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
@@ -3001,13 +2982,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			branchBreakTolerance: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			airPollutionTolerance: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
@@ -3036,13 +3015,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			branchBreakTolerance: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [0]
 			},
 			airPollutionTolerance: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
@@ -3142,8 +3119,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -3178,8 +3154,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -3283,8 +3258,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
@@ -3537,8 +3511,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			coastWindTolerance: {
 				...COAST_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
+				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
