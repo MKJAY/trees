@@ -426,7 +426,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		otherDutchNames: ['Grijze els'],
 		images: [
 			{
-				label: 'Blad #1',
+				label: 'Blad',
 				source: 'images/alnus-incana/leaf-1.jpg'
 			}
 		],
@@ -470,8 +470,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		crossedTreeSpeciesScientificNames: ['Alnus japonica', 'Alnus subcordata'],
 		images: [
 			{
-				label: 'Blad #1',
-				source: 'images/alnus-x-spaethii-\'spaeth\'/leaf-1.webp'
+				label: 'Blad',
+				source: "images/alnus-x-spaethii-'spaeth'/leaf-1.webp"
 			}
 		],
 		speciesSpecificCharacteristics: {
@@ -578,6 +578,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Betula pendula',
 		dutchName: { value: 'Ruwe berk' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/betula-pendula/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -608,7 +614,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
-		}
+		},
+		similarTreeSpecies: [
+			{
+				scientificName: 'Betula pubescens',
+				differences: [
+					'Geen behaarde jonge takken t.o.v. Betula pubescens',
+					'Takken hangen meestal naar beneden zoals een treurvorm t.o.v. Betula pubescens'
+				]
+			}
+		]
 	},
 	{
 		scientificName: 'Styphnolobium japonicum',
@@ -1617,6 +1632,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Betula utilis',
 		dutchName: { value: 'Himalayaberk' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/betula-utilis/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1653,6 +1674,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Betula nigra',
 		dutchName: { value: 'Zwarte berk' },
 		otherDutchNames: ['Rode berk'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/betula-nigra/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1688,6 +1715,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Betula pubescens',
 		dutchName: { value: 'Zachte berk' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/betula-pubescens/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1718,7 +1751,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			}
-		}
+		},
+		similarTreeSpecies: [
+			{
+				scientificName: 'Betula pendula',
+				differences: [
+					'Behaarde jonge takken t.o.v. Betula pendula',
+					'Takken hangen meestal niet naar beneden zoals een treurvorm t.o.v. Betula pendula'
+				]
+			}
+		]
 	},
 	{
 		scientificName: 'Castanea sativa',
