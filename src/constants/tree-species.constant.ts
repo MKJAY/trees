@@ -800,6 +800,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Crataegus monogyna',
 		dutchName: { value: 'Eénstijlige meidoorn' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/crataegus-monogyna/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -904,6 +910,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Carpinus betulus',
 		dutchName: { value: 'Gewone haagbeuk' },
 		otherDutchNames: ['Haagbeuk'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/carpinus-betulus/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1748,6 +1760,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Castanea sativa',
 		dutchName: { value: 'Tamme kastanje' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/castanea-sativa/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1784,6 +1802,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Catalpa bignonioides',
 		dutchName: { value: 'Trompetboom' },
 		otherDutchNames: ['Grote trompetboom'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/catalpa-bignonioides/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1819,6 +1843,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Cedrus libani',
 		dutchName: { value: 'Libanonceder' },
 		otherDutchNames: ['Atlasceder'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/cedrus-libani/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1855,6 +1885,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Cercidiphyllum japonicum',
 		dutchName: { value: 'Katsuraboom' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/cercidiphyllum-japonicum/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1891,6 +1927,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Chamaecyparis lawsoniana',
 		dutchName: { value: 'Californische cypres' },
 		otherDutchNames: ['Schijncypres'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/chamaecyparis-lawsoniana/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1928,6 +1970,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Corylus colurna',
 		dutchName: { value: 'Boomhazelaar' },
 		otherDutchNames: ['Turkse hazelaar'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/corylus-colurna/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
