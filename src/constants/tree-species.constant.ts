@@ -505,6 +505,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Gleditsia triacanthos',
 		dutchName: { value: 'Valse Christusdoorn' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/gleditsia-triacanthos/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -693,6 +699,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Ginkgo biloba',
 		dutchName: { value: 'Japanse notenboom' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/ginkgo-biloba/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -767,6 +779,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Fraxinus excelsior',
 		dutchName: { value: 'Gewone es' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/fraxinus-excelsior/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -875,6 +893,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Fagus sylvatica',
 		dutchName: { value: 'Gewone beuk' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/fagus-sylvatica/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2012,6 +2036,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Davidia involucrata',
 		dutchName: { value: 'Vaantjesboom ' },
 		otherDutchNames: ['Zakdoekenboom', 'Luierboom'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/davidia-involucrata/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2048,6 +2078,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Fraxinus angustifolia',
 		dutchName: { value: 'Smalbladige es' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/fraxinus-angustifolia/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2083,6 +2119,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Fraxinus ornus',
 		dutchName: { value: 'Pluimes' },
 		otherDutchNames: ['Bloem-es', 'Manna-es'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/fraxinus-ornus/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2117,6 +2159,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Fraxinus americana',
 		dutchName: { value: 'Amerikaanse es' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/fraxinus-americana/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2153,6 +2201,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Juglans regia',
 		dutchName: { value: 'Gewone walnoot' },
 		otherDutchNames: ['Gewone notelaar', 'Okkernoot'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/juglans-regia/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2189,6 +2243,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Juglans nigra',
 		dutchName: { value: 'Zwarte walnoot' },
 		otherDutchNames: ['Zwarte notelaar'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/juglans-nigra/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
