@@ -2285,6 +2285,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Koelreuteria paniculata',
 		dutchName: { value: 'Lampionboom' },
 		otherDutchNames: ['Blazenboom', 'Chinese vernisboom', 'Gele zeepboom'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/koelreuteria-paniculata/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2322,6 +2328,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Laburnum x watereri',
 		dutchName: { value: 'Goude regen' },
 		crossedTreeSpeciesScientificNames: ['Laburnum anagyroides', 'Laburnum alpinum'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/laburnum-x-watereri/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2359,6 +2371,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Larix decidua',
 		dutchName: { value: 'Europese lork' },
 		otherDutchNames: ['Europese lariks'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/larix-decidua/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2395,6 +2413,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Liquidambar styraciflua',
 		dutchName: { value: 'Amberboom' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/liquidambar-styraciflua/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2429,6 +2453,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Liriodendron tulipifera',
 		dutchName: { value: 'Tulpenboom' },
 		otherDutchNames: ['Amerikaanse tulpenboom'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/liriodendron-tulipifera/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2467,6 +2497,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			isDisabled: true
 		},
 		otherDutchNames: ['Noordelijke Japanse magnolia'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/magnolia-kobus/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2502,6 +2538,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Malus sylvestris',
 		dutchName: { value: 'Wilde appel' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/malus-sylvestris/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2539,6 +2581,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Metasequoia glyptostroboides',
 		dutchName: { value: 'Watercypres' },
 		otherDutchNames: ['Chinese watercypres'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/metasequoia-glyptostroboides/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2575,6 +2623,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Morus alba',
 		dutchName: { value: 'Witte moerbei' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/morus-alba/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2609,6 +2663,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Morus nigra',
 		dutchName: { value: 'Zwarte moerbei' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/morus-nigra/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
