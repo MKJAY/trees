@@ -230,6 +230,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Quercus robur',
 		dutchName: { value: 'Zomereik' },
 		otherDutchNames: ['Inlandse eik'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/quercus-robur/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -264,6 +270,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Quercus petraea',
 		dutchName: { value: 'Wintereik' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/quercus-petraea/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -299,6 +311,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Quercus rubra',
 		dutchName: { value: 'Amerikaanse eik' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/quercus-rubra/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/quercus-rubra/leaf-2.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3478,6 +3500,36 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Quercus cerris',
 		dutchName: { value: 'Moseik' },
 		otherDutchNames: ['Turkse eik'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/quercus-cerris/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/quercus-cerris/leaf-2.jpeg'
+			},
+			{
+				label: 'Blad #3',
+				source: 'images/quercus-cerris/leaf-3.webp'
+			},
+			{
+				label: 'Blad #4',
+				source: 'images/quercus-cerris/leaf-4.jpg'
+			},
+			{
+				label: 'Blad #5',
+				source: 'images/quercus-cerris/leaf-5.jpg'
+			},
+			{
+				label: 'Blad #6',
+				source: 'images/quercus-cerris/leaf-6.jpg'
+			},
+			{
+				label: 'Blad #7',
+				source: 'images/quercus-cerris/leaf-7.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3512,6 +3564,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Quercus frainetto',
 		dutchName: { value: 'Hongaarse eik' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/quercus-frainetto/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/quercus-frainetto/leaf-2.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3547,6 +3609,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Quercus palustris',
 		dutchName: { value: 'Moeraseik' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/quercus-palustris/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/quercus-palustris/leaf-2.jpeg'
+			},
+			{
+				label: 'Blad #3',
+				source: 'images/quercus-palustris/leaf-3.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3582,6 +3658,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Quercus ilex',
 		dutchName: { value: 'Steeneik' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/quercus-ilex/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/quercus-ilex/leaf-2.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3616,6 +3702,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Quercus phellos',
 		dutchName: { value: 'Wilgbladige eik' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/quercus-phellos/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3653,6 +3745,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		dutchName: { value: 'Turners eik' },
 		otherDutchNames: ['Oostenrijkse eik'],
 		crossedTreeSpeciesScientificNames: ['Quercus ilex', 'Quercus robur'],
+		images: [
+			{
+				label: 'Blad',
+				source: "images/quercus-x-turneri-'pseudoturneri'/leaf-1.jpeg"
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3692,6 +3790,28 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			isDisabled: true
 		},
 		crossedTreeSpeciesScientificNames: ['Quercus cerris', 'Quercus suber'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/quercus-x-hispanica/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/quercus-x-hispanica/leaf-2.jpg'
+			},
+			{
+				label: 'Blad #3',
+				source: 'images/quercus-x-hispanica/leaf-3.jpg'
+			},
+			{
+				label: 'Blad #4',
+				source: 'images/quercus-x-hispanica/leaf-4.jpg'
+			},
+			{
+				label: 'Blad #5',
+				source: 'images/quercus-x-hispanica/leaf-5.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
