@@ -546,6 +546,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		otherScientificNames: ['Platanus x acerifolia'],
 		dutchName: { value: 'Gewone plataan' },
 		crossedTreeSpeciesScientificNames: ['Platanus orientalis', 'Platanus occidentalis'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/platanus-x-hispanica/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -666,6 +672,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Populus alba',
 		dutchName: { value: 'Witte abeel' },
+		images: [
+			{
+				label: 'Blad bovenkant #1',
+				source: 'images/populus-alba/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad bovenkant #2',
+				source: 'images/populus-alba/leaf-2.jpg'
+			},
+			{
+				label: 'Blad onderkant',
+				source: 'images/populus-alba/leaf-3.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1018,6 +1038,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Prunus avium',
 		dutchName: { value: 'Boskers' },
 		otherDutchNames: ['Zoete kers', 'Wilde kers'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/prunus-avium/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/prunus-avium/leaf-2.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1230,6 +1260,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Populus nigra',
 		dutchName: { value: 'Zwarte populier' },
 		otherDutchNames: ['Europese zwarte populier', 'Italiaanse populier'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/populus-nigra/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/populus-nigra/leaf-2.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1385,6 +1425,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Platanus orientalis',
 		dutchName: { value: 'Oosterse plataan' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/platanus-orientalis/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2123,6 +2169,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			{
 				label: 'Blad',
 				source: 'images/fraxinus-ornus/leaf-1.webp'
+			},
+			{
+				label: 'Bloem',
+				source: 'images/fraxinus-ornus/flower-1.webp'
 			}
 		],
 		speciesSpecificCharacteristics: {
@@ -2704,6 +2754,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Nothofagus antarctica',
 		dutchName: { value: 'Schijnbeuk' },
 		otherDutchNames: ['Zuidelijke beuk'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/nothofagus-antarctica/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2741,6 +2797,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Ostrya carpinifolia',
 		dutchName: { value: 'Europese hopbeuk' },
 		otherDutchNames: ['Hopbeuk'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/ostrya-carpinifolia/leaf-1.jpeg'
+			},
+			{
+				label: 'Bloem',
+				source: 'images/ostrya-carpinifolia/flower-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2776,6 +2842,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Parrotia persica',
 		dutchName: { value: 'Perzisch ijzerhout' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/parrotia-persica/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2813,6 +2885,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Paulownia tomentosa',
 		dutchName: { value: 'Anna Paulowniaboom' },
 		otherDutchNames: ['Anna Paulowna boom'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/paulownia-tomentosa/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2849,6 +2927,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Picea abies',
 		dutchName: { value: 'Fijnspar' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/picea-abies/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2885,6 +2969,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Pinus nigra',
 		dutchName: { value: 'Zwarte den' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/pinus-nigra/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2922,6 +3012,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Pinus sylvestris',
 		dutchName: { value: 'Grove den' },
 		otherDutchNames: ['Vliegden'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/pinus-sylvestris/leaf-1.webp'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2960,6 +3056,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		dutchName: { value: 'Grauwe abeel' },
 		otherDutchNames: ['Grijze abeel'],
 		crossedTreeSpeciesScientificNames: ['Populus alba', 'Populus tremula'],
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/populus-x-canescens/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/populus-x-canescens/leaf-2.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -2995,6 +3101,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Populus tremula',
 		dutchName: { value: 'Ratelpopulier' },
 		otherDutchNames: ['Trilpopulier', 'Esp'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/populus-tremula/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3032,6 +3144,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		dutchName: { value: 'Canadapopulier' },
 		otherDutchNames: ['Canadese populier', 'Zwarte hybride populier'],
 		crossedTreeSpeciesScientificNames: ['Populus deltoides', 'Populus nigra'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/populus-x-canadensis/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3066,6 +3184,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Prunus cerasifera',
 		dutchName: { value: 'Kerspruim' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/prunus-cerasifera/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/prunus-cerasifera/leaf-2.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3099,6 +3227,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Prunus serrulata',
 		dutchName: { value: 'Japanse sierkers' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/prunus-serrulata/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3133,6 +3267,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Prunus padus',
 		dutchName: { value: 'Europese vogelkers' },
 		otherDutchNames: ['Gewone vogelkers'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/prunus-padus/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3166,6 +3306,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Prunus serotina',
 		dutchName: { value: 'Amerikaanse vogelkers' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/prunus-serotina/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3199,6 +3345,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Pseudotsuga menziesii',
 		dutchName: { value: 'Douglasspar' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/pseudotsuga-menziesii/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/pseudotsuga-menziesii/leaf-2.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3235,6 +3391,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Pterocarya fraxinifolia',
 		dutchName: { value: 'Kaukasische vleugelnoot' },
 		otherDutchNames: ['Gewone vleugelnoot'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/pterocarya-fraxinifolia/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3275,6 +3437,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			isDisabled: true
 		},
 		otherDutchNames: ['Sierpeer'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/pyrus-calleryana/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
