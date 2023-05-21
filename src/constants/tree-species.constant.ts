@@ -196,6 +196,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Robinia pseudoacacia',
 		dutchName: { value: 'Valse acacia' },
 		otherDutchNames: ['Gewone acacia', 'Schijnacacia', 'Witte acacia', 'Robinia'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/robinia-pseudoacacia/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -659,6 +665,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		otherScientificNames: ['Sophora japonica'],
 		dutchName: { value: 'Honingboom' },
 		otherDutchNames: ['Japanse honingboom'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/styphnolobium-japonicum/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -900,6 +912,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Sorbus aucuparia',
 		dutchName: { value: 'Gewone lijsterbes' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/sorbus-aucuparia/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1104,6 +1122,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Salix alba',
 		dutchName: { value: 'Schietwilg' },
 		otherDutchNames: ['Gewone wilg', 'Witte wilg'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/salix-alba/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1140,6 +1164,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Tilia cordata',
 		dutchName: { value: 'Winterlinde' },
 		otherDutchNames: ['Kleinbladige linde'],
+		images: [
+			{
+				label: 'Blad bovenkant',
+				source: 'images/tilia-cordata/leaf-1.jpg'
+			},
+			{
+				label: 'Blad onderkant',
+				source: 'images/tilia-cordata/leaf-2.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1175,6 +1209,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Tilia platyphyllos',
 		dutchName: { value: 'Zomerlinde' },
 		otherDutchNames: ['Grootbladige linde'],
+		images: [
+			{
+				label: 'Blad bovenkant',
+				source: 'images/tilia-platyphyllos/leaf-1.jpeg'
+			},
+			{
+				label: 'Blad onderkant',
+				source: 'images/tilia-platyphyllos/leaf-2.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1210,6 +1254,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Tilia tomentosa',
 		dutchName: { value: 'Zilverlinde' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/tilia-tomentosa/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -1246,6 +1296,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		dutchName: { value: 'Hollandse linde' },
 		otherDutchNames: ['Gewone linde'],
 		crossedTreeSpeciesScientificNames: ['Tilia cordata', 'Tilia platyphyllos'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/tilia-x-europaea/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3849,6 +3905,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		dutchName: { value: 'Gele treurwilg' },
 		otherDutchNames: ['Treurwilg'],
 		crossedTreeSpeciesScientificNames: ['Salix babylonica', "Salix alba 'Vitellina'"],
+		images: [
+			{
+				label: 'Blad',
+				source: "images/salix-x-sepulcralis-'chrysocoma'/leaf-1.jpeg"
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3884,6 +3946,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Sequoiadendron giganteum',
 		dutchName: { value: 'Mammoetboom' },
+		images: [
+			{
+				label: 'Blad #1',
+				source: 'images/sequoiadendron-giganteum/leaf-1.jpg'
+			},
+			{
+				label: 'Blad #2',
+				source: 'images/sequoiadendron-giganteum/leaf-2.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3920,6 +3992,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Sorbus aria',
 		dutchName: { value: 'Meelbes' },
+		images: [
+			{
+				label: 'Blad bovenkant',
+				source: 'images/sorbus-aria/leaf-1.jpg'
+			},
+			{
+				label: 'Blad onderkant',
+				source: 'images/sorbus-aria/leaf-2.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3955,6 +4037,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Sorbus intermedia',
 		dutchName: { value: 'Zweedse meelbes' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/sorbus-intermedia/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -3989,6 +4077,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Taxodium distichum',
 		dutchName: { value: 'Moerascypres' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/taxodium-distichum/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -4025,6 +4119,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Taxus baccata',
 		dutchName: { value: 'Venijnboom' },
 		otherDutchNames: ['Gewone taxus'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/taxus-baccata/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -4061,6 +4161,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Thuja plicata',
 		dutchName: { value: 'Reuzenlevensboom' },
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/thuja-plicata/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -4096,7 +4202,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Ulmus minor',
 		dutchName: { value: 'Gladde iep' },
-		otherDutchNames: ['Veldiep'],
+		otherDutchNames: ['Gladde olm', 'Veldiep'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/ulmus-minor/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -4132,7 +4244,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 	{
 		scientificName: 'Ulmus glabra',
 		dutchName: { value: 'Ruwe iep' },
-		otherDutchNames: ['Bergiep'],
+		otherDutchNames: ['Ruwe olm', 'Bergiep'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/ulmus-glabra/leaf-1.jpg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
@@ -4169,6 +4287,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		scientificName: 'Zelkova serrata',
 		dutchName: { value: 'Japanse zelkova' },
 		otherDutchNames: ['Japanse schijniep'],
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/zelkova-serrata/leaf-1.jpeg'
+			}
+		],
 		speciesSpecificCharacteristics: {
 			saltToleranceSchema: {
 				...SALT_TOLERANCE_SCHEMA,
