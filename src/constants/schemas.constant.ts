@@ -6,8 +6,13 @@ const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 	'Meer tolerant'
 ];
 
-export const SALT_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor zout in de wortelzone',
+export const SOIL_COMPACTION_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor bodemverdichting',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
+
+export const SALT_IN_SOIL_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor zout in de bodem',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
 
@@ -16,7 +21,7 @@ export const SALT_SPRAY_TOLERANCE_SCHEMA: Schema = {
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
 
-export const COAST_WIND_TOLERANCE_SCHEMA: Schema = {
+export const COASTAL_WIND_TOLERANCE_SCHEMA: Schema = {
 	label: 'Tolerantie voor zeewind',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };

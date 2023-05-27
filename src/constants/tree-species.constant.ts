@@ -2,9 +2,10 @@ import type { TreeSpecies } from '../types/tree-species.type';
 import {
 	AIR_POLLUTION_TOLERANCE_SCHEMA,
 	BRANCH_BREAK_TOLERANCE_SCHEMA,
-	COAST_WIND_TOLERANCE_SCHEMA,
+	COASTAL_WIND_TOLERANCE_SCHEMA,
+	SALT_IN_SOIL_TOLERANCE_SCHEMA,
 	SALT_SPRAY_TOLERANCE_SCHEMA,
-	SALT_TOLERANCE_SCHEMA,
+	SOIL_COMPACTION_TOLERANCE_SCHEMA,
 	WINDTHROW_TOLERANCE_SCHEMA
 } from './schemas.constant';
 
@@ -36,8 +37,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -46,8 +52,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -107,8 +113,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -117,8 +128,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -163,16 +174,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -203,16 +219,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -243,16 +264,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -283,8 +309,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -292,8 +323,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -328,8 +359,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -337,8 +373,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -369,8 +405,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -378,8 +419,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -414,8 +455,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -423,8 +469,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -455,16 +501,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -499,8 +550,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -508,8 +564,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -540,16 +596,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -581,16 +642,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -620,8 +686,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -629,8 +700,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -672,8 +743,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -681,8 +757,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -721,16 +797,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -760,8 +841,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -769,8 +855,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -800,8 +886,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -809,8 +900,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -840,16 +931,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -879,8 +975,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -888,8 +989,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -919,8 +1020,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -928,8 +1034,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -960,8 +1066,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -969,8 +1080,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1001,8 +1112,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1010,8 +1126,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1043,8 +1159,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1052,8 +1173,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1089,8 +1210,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1098,8 +1224,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1129,8 +1255,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1138,8 +1269,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1175,8 +1306,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1184,8 +1320,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -1220,8 +1356,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1229,8 +1370,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1261,8 +1402,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1270,8 +1416,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -1303,8 +1449,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1312,8 +1463,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1349,16 +1500,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -1389,16 +1545,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -1428,16 +1589,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1469,8 +1635,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1478,8 +1649,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1510,8 +1681,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -1519,8 +1695,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1555,8 +1731,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1564,8 +1745,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1601,8 +1782,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1610,8 +1796,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1641,8 +1827,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1651,8 +1842,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1691,8 +1882,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1701,8 +1897,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1741,8 +1937,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1750,8 +1951,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1782,8 +1983,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1791,8 +1997,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1824,8 +2030,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1833,8 +2044,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1865,8 +2076,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1874,8 +2090,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1915,8 +2131,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1924,8 +2145,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1957,8 +2178,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -1966,8 +2192,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -1998,8 +2224,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2008,8 +2239,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2040,8 +2271,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -2049,8 +2285,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2082,8 +2318,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2092,8 +2333,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2125,8 +2366,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -2134,8 +2380,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2167,8 +2413,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2177,8 +2428,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2209,16 +2460,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2254,8 +2510,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -2263,8 +2524,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -2294,8 +2555,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -2303,8 +2569,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2336,8 +2602,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -2345,8 +2616,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2378,8 +2649,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -2387,8 +2663,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2420,8 +2696,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2430,8 +2711,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2463,8 +2744,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2473,8 +2759,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2506,8 +2792,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2516,8 +2807,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2548,16 +2839,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2588,8 +2884,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -2597,8 +2898,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2632,8 +2933,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -2641,8 +2947,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2673,8 +2979,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2683,8 +2994,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2716,8 +3027,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2726,8 +3042,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2758,16 +3074,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2798,16 +3119,21 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2839,8 +3165,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2849,8 +3180,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2886,8 +3217,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -2895,8 +3231,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2927,8 +3263,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2937,8 +3278,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2970,8 +3311,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -2980,8 +3326,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3012,8 +3358,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3022,8 +3373,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3054,8 +3405,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3064,8 +3420,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3097,8 +3453,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3107,8 +3468,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3145,8 +3506,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3154,8 +3520,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -3186,8 +3552,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3195,8 +3566,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -3229,8 +3600,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3238,8 +3614,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -3273,8 +3649,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3282,8 +3663,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3312,8 +3693,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3321,8 +3707,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3352,8 +3738,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3361,8 +3752,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3391,8 +3782,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3400,8 +3796,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3434,8 +3830,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3443,8 +3844,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3476,8 +3877,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3486,8 +3892,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3522,8 +3928,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3531,8 +3942,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -3587,8 +3998,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3596,8 +4012,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -3631,8 +4047,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3640,8 +4061,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3680,8 +4101,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3689,8 +4115,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3725,8 +4151,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3734,8 +4165,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -3765,8 +4196,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3774,8 +4210,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3808,8 +4244,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3817,8 +4258,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3869,8 +4310,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
 			saltSprayToleranceSchema: {
@@ -3878,8 +4324,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3912,8 +4358,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -3921,8 +4372,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3957,8 +4408,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -3967,8 +4423,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4003,8 +4459,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -4012,8 +4473,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4044,8 +4505,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -4053,8 +4519,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
 			windthrowTolerance: {
@@ -4084,8 +4550,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -4093,8 +4564,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4126,8 +4597,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4136,8 +4612,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4168,8 +4644,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -4177,8 +4658,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4210,8 +4691,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -4219,8 +4705,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4252,8 +4738,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
@@ -4261,8 +4752,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4294,8 +4785,13 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
-			saltToleranceSchema: {
-				...SALT_TOLERANCE_SCHEMA,
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
@@ -4304,8 +4800,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastWindTolerance: {
-				...COAST_WIND_TOLERANCE_SCHEMA,
+			coastalWindTolerance: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},

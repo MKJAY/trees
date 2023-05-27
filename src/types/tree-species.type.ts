@@ -6,9 +6,10 @@ export interface TreeSpecies {
 	crossedTreeSpeciesScientificNames?: string[];
 	images?: Image[];
 	speciesSpecificCharacteristics: {
-		saltToleranceSchema?: Schema;
+		soilCompactionToleranceSchema?: Schema;
+		saltInSoilToleranceSchema?: Schema;
 		saltSprayToleranceSchema?: Schema;
-		coastWindTolerance?: Schema;
+		coastalWindTolerance?: Schema;
 		windthrowTolerance?: Schema;
 		branchBreakTolerance?: Schema;
 		airPollutionTolerance?: Schema;
