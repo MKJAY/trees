@@ -2,9 +2,16 @@
 	import type { Image } from '../types/tree-species.type';
 
 	export let image: Image;
+
+	let fullscreenImageIsEnabled = false;
 </script>
 
-<div class="image-card">
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div
+	class="image-card clickable"
+	class:fullscreen={fullscreenImageIsEnabled}
+	on:click={() => (fullscreenImageIsEnabled = !fullscreenImageIsEnabled)}
+>
 	<span>{image.label}</span>
 	<img class="foreground-image" src={image.source} alt={image.label} />
 	<img class="background-image" src={image.source} alt={image.label} />
@@ -15,6 +22,22 @@
 		position: relative;
 		border-radius: 8px;
 		overflow: hidden;
+
+		&.fullscreen {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+			border-radius: unset;
+
+			img {
+				width: 100% !important;
+				height: 100% !important;
+				aspect-ratio: unset !important;
+			}
+		}
 
 		span {
 			position: absolute;
