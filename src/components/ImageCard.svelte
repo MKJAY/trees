@@ -19,7 +19,10 @@
 
 <style lang="scss">
 	.image-card {
+		--blur-size: 12px;
 		position: relative;
+		width: 256px;
+		height: 256px;
 		border-radius: 8px;
 		overflow: hidden;
 
@@ -30,13 +33,10 @@
 			left: 0;
 			right: 0;
 			z-index: 999;
+			width: calc(100% + var(--blur-size));
+			height: calc(100% + var(--blur-size));
+			margin: calc(var(--blur-size) * -1);
 			border-radius: unset;
-
-			img {
-				width: 100% !important;
-				height: 100% !important;
-				aspect-ratio: unset !important;
-			}
 		}
 
 		span {
@@ -50,10 +50,9 @@
 		}
 
 		img {
-			width: 256px;
-			height: 256px;
-
 			&.foreground-image {
+				width: 100%;
+				height: 100%;
 				object-fit: contain;
 			}
 
@@ -61,8 +60,11 @@
 				position: absolute;
 				top: 0;
 				z-index: -1;
+				width: calc(100% + var(--blur-size) * 2);
+				height: calc(100% + var(--blur-size) * 2);
 				object-fit: cover;
-				filter: blur(12px);
+				margin: calc(var(--blur-size) * -1);
+				filter: blur(var(--blur-size));
 			}
 		}
 	}

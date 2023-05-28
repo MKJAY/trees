@@ -187,7 +187,7 @@
 					flex-direction: column;
 					flex-wrap: unset;
 
-					:global(.image-card > img) {
+					:global(.image-card:not(.fullscreen)) {
 						width: 100%;
 						height: auto;
 						aspect-ratio: 1/1;
