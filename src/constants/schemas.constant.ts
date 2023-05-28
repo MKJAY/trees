@@ -40,3 +40,8 @@ export const AIR_POLLUTION_TOLERANCE_SCHEMA: Schema = {
 	label: 'Tolerantie voor luchtvervuiling',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
+
+export const SPRING_FROST_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor voorjaarsvorst',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
