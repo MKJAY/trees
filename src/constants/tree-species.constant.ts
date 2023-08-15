@@ -53,27 +53,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -135,27 +135,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -200,26 +200,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -251,26 +251,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -302,27 +302,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -354,27 +354,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -410,27 +410,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -462,26 +462,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -518,26 +518,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -569,27 +569,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -625,27 +625,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -676,26 +676,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -728,26 +728,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -779,27 +779,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -842,27 +842,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -901,26 +901,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -952,26 +952,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1003,26 +1003,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1053,26 +1053,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1104,26 +1104,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1155,27 +1155,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1207,26 +1207,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1259,27 +1259,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1312,27 +1312,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1369,25 +1369,25 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1420,27 +1420,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1477,26 +1477,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1533,27 +1533,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1585,26 +1585,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1638,27 +1638,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1694,26 +1694,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1745,26 +1745,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1795,27 +1795,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1848,27 +1848,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1900,26 +1900,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1]
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -1956,27 +1956,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2013,26 +2013,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2065,27 +2065,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2126,27 +2126,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2186,27 +2186,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2238,27 +2238,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2291,27 +2291,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2343,27 +2343,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2404,27 +2404,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2457,26 +2457,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2510,27 +2510,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2562,27 +2562,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2616,27 +2616,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2669,27 +2669,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2723,27 +2723,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2774,27 +2774,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2831,26 +2831,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2882,27 +2882,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2935,27 +2935,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -2988,27 +2988,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3042,27 +3042,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3096,27 +3096,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3150,27 +3150,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3201,26 +3201,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3253,26 +3253,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3308,27 +3308,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3361,27 +3361,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3415,27 +3415,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3466,27 +3466,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3517,27 +3517,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3571,27 +3571,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3628,27 +3628,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3681,27 +3681,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3735,27 +3735,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3788,27 +3788,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3841,27 +3841,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3895,27 +3895,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -3953,26 +3953,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4005,26 +4005,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4059,26 +4059,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4114,25 +4114,25 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4164,25 +4164,25 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4215,25 +4215,25 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4265,25 +4265,25 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4319,27 +4319,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4373,27 +4373,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4429,26 +4429,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4505,26 +4505,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4560,27 +4560,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4620,27 +4620,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4676,26 +4676,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4727,27 +4727,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4781,27 +4781,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4853,27 +4853,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4907,27 +4907,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -4964,27 +4964,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5020,27 +5020,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5072,26 +5072,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2]
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5123,27 +5123,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5177,27 +5177,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5229,27 +5229,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5282,27 +5282,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5335,27 +5335,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
@@ -5389,27 +5389,27 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			coastalWindTolerance: {
+			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			windthrowTolerance: {
+			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			branchBreakTolerance: {
+			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true
 			},
-			airPollutionTolerance: {
+			airPollutionToleranceSchema: {
 				...AIR_POLLUTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
 				isDisabled: true
 			},
-			springFrostTolerance: {
+			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [2],
 				isDisabled: true

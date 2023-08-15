@@ -9,11 +9,11 @@ export interface TreeSpecies {
 		soilCompactionToleranceSchema?: Schema;
 		saltInSoilToleranceSchema?: Schema;
 		saltSprayToleranceSchema?: Schema;
-		coastalWindTolerance?: Schema;
-		windthrowTolerance?: Schema;
-		branchBreakTolerance?: Schema;
-		airPollutionTolerance?: Schema;
-		springFrostTolerance?: Schema;
+		coastalWindToleranceSchema?: Schema;
+		windthrowToleranceSchema?: Schema;
+		branchBreakToleranceSchema?: Schema;
+		airPollutionToleranceSchema?: Schema;
+		springFrostToleranceSchema?: Schema;
 	};
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];
