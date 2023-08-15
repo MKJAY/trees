@@ -18,6 +18,7 @@ export interface TreeSpecies {
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];
 	notes?: string[];
+	isETW: boolean;
 }
 
 export interface Value {

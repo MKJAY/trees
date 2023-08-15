@@ -91,7 +91,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 					'Onbeharste knoppen t.o.v. {scientificName}'
 				]
 			}
-		]
+		],
+		isETW: true
 	},
 	{
 		scientificName: 'Abies grandis',
@@ -172,7 +173,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 					'Beharste knoppen t.o.v. {scientificName}'
 				]
 			}
-		]
+		],
+		isETW: true
 	},
 	{
 		scientificName: 'Acer campestre',
@@ -222,7 +224,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Robinia pseudoacacia',
@@ -272,7 +275,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus robur',
@@ -323,7 +327,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus petraea',
@@ -374,7 +379,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus rubra',
@@ -429,7 +435,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Alnus cordata',
@@ -479,7 +486,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Alnus glutinosa',
@@ -534,7 +542,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Alnus incana',
@@ -585,7 +594,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: "Alnus x spaethii 'Spaeth'",
@@ -640,7 +650,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Gleditsia triacanthos',
@@ -689,7 +700,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Platanus x hispanica',
@@ -740,7 +752,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Betula pendula',
@@ -800,7 +813,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 					'Takken hangen meestal naar beneden zoals een treurvorm t.o.v. Betula pubescens'
 				]
 			}
-		]
+		],
+		isETW: true
 	},
 	{
 		scientificName: 'Styphnolobium japonicum',
@@ -853,7 +867,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Populus alba',
@@ -910,7 +925,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Ginkgo biloba',
@@ -960,7 +976,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Ailanthus altissima',
@@ -1010,7 +1027,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Fraxinus excelsior',
@@ -1059,7 +1077,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Crataegus monogyna',
@@ -1109,7 +1128,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Sorbus aucuparia',
@@ -1160,7 +1180,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Fagus sylvatica',
@@ -1210,7 +1231,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Carpinus betulus',
@@ -1262,7 +1284,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Aesculus hippocastanum',
@@ -1314,7 +1337,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Prunus avium',
@@ -1368,7 +1392,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Salix alba',
@@ -1420,7 +1445,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Tilia cordata',
@@ -1475,7 +1501,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Tilia platyphyllos',
@@ -1531,7 +1558,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Tilia tomentosa',
@@ -1581,7 +1609,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Tilia x europaea',
@@ -1634,7 +1663,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Populus nigra',
@@ -1688,7 +1718,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Acer pseudoplatanus',
@@ -1738,7 +1769,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Acer platanoides',
@@ -1788,7 +1820,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Aesculus x carnea',
@@ -1840,7 +1873,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Platanus orientalis',
@@ -1890,7 +1924,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Acer negundo',
@@ -1950,7 +1985,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 		notes: [
 			'Het blad kan 3, 5 of 7 deelblaadjes hebben.',
 			'De deelblaadjes kunnen meer of minder ingesneden zijn.'
-		]
+		],
+		isETW: true
 	},
 	{
 		scientificName: 'Acer saccharinum',
@@ -2001,7 +2037,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Acer cappadocicum',
@@ -2053,7 +2090,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Acer x freemanii',
@@ -2113,7 +2151,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Acer rubrum',
@@ -2172,7 +2211,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Betula utilis',
@@ -2223,7 +2263,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Betula nigra',
@@ -2275,7 +2316,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Betula pubescens',
@@ -2335,7 +2377,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 					'Takken hangen meestal niet naar beneden zoals een treurvorm t.o.v. Betula pendula'
 				]
 			}
-		]
+		],
+		isETW: true
 	},
 	{
 		scientificName: 'Castanea sativa',
@@ -2386,7 +2429,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Catalpa bignonioides',
@@ -2437,7 +2481,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Cedrus libani',
@@ -2490,7 +2535,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Cercidiphyllum japonicum',
@@ -2541,7 +2587,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Chamaecyparis lawsoniana',
@@ -2594,7 +2641,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Corylus colurna',
@@ -2646,7 +2694,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Davidia involucrata',
@@ -2699,7 +2748,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Fraxinus angustifolia',
@@ -2749,7 +2799,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Fraxinus ornus',
@@ -2804,7 +2855,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Fraxinus americana',
@@ -2855,7 +2907,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Juglans regia',
@@ -2907,7 +2960,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Juglans nigra',
@@ -2959,7 +3013,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Koelreuteria paniculata',
@@ -3012,7 +3067,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Laburnum x watereri',
@@ -3065,7 +3121,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Larix decidua',
@@ -3118,7 +3175,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Liquidambar styraciflua',
@@ -3167,7 +3225,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Liriodendron tulipifera',
@@ -3218,7 +3277,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Magnolia kobus',
@@ -3273,7 +3333,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Malus sylvestris',
@@ -3325,7 +3386,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Metasequoia glyptostroboides',
@@ -3378,7 +3440,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Morus alba',
@@ -3428,7 +3491,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Morus nigra',
@@ -3478,7 +3542,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Nothofagus antarctica',
@@ -3531,7 +3596,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Ostrya carpinifolia',
@@ -3587,7 +3653,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Parrotia persica',
@@ -3639,7 +3706,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Paulownia tomentosa',
@@ -3692,7 +3760,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Picea abies',
@@ -3744,7 +3813,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Pinus nigra',
@@ -3796,7 +3866,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Pinus sylvestris',
@@ -3849,7 +3920,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Populus x canescens',
@@ -3905,7 +3977,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Populus tremula',
@@ -3956,7 +4029,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Populus x canadensis',
@@ -4009,7 +4083,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Prunus cerasifera',
@@ -4062,7 +4137,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Prunus serrulata',
@@ -4111,7 +4187,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Prunus padus',
@@ -4161,7 +4238,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Prunus serotina',
@@ -4210,7 +4288,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Pseudotsuga menziesii',
@@ -4265,7 +4344,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Pterocarya fraxinifolia',
@@ -4318,7 +4398,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Pyrus calleryana',
@@ -4372,7 +4453,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus cerris',
@@ -4447,7 +4529,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus frainetto',
@@ -4502,7 +4585,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus palustris',
@@ -4561,7 +4645,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus ilex',
@@ -4615,7 +4700,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus phellos',
@@ -4666,7 +4752,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: "Quercus x turneri 'Pseudoturneri'",
@@ -4719,7 +4806,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Quercus x hispanica',
@@ -4790,7 +4878,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: "Salix x sepulcralis 'Chrysocoma'",
@@ -4843,7 +4932,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Sequoiadendron giganteum',
@@ -4899,7 +4989,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Sorbus aria',
@@ -4954,7 +5045,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Sorbus intermedia',
@@ -5004,7 +5096,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Taxodium distichum',
@@ -5055,7 +5148,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Taxus baccata',
@@ -5108,7 +5202,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Thuja plicata',
@@ -5159,7 +5254,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Ulmus minor',
@@ -5211,7 +5307,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Ulmus glabra',
@@ -5263,7 +5360,8 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	},
 	{
 		scientificName: 'Zelkova serrata',
@@ -5316,6 +5414,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [2],
 				isDisabled: true
 			}
-		}
+		},
+		isETW: true
 	}
 ];
