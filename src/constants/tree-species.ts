@@ -1,4 +1,4 @@
-import type { TreeSpecies } from '../types/tree-species.type';
+import type { TreeSpecies } from '../types/tree-species';
 import {
 	AIR_POLLUTION_TOLERANCE_SCHEMA,
 	BRANCH_BREAK_TOLERANCE_SCHEMA,
@@ -8,7 +8,7 @@ import {
 	SOIL_COMPACTION_TOLERANCE_SCHEMA,
 	SPRING_FROST_TOLERANCE_SCHEMA,
 	WINDTHROW_TOLERANCE_SCHEMA
-} from './schemas.constant';
+} from './schemas';
 
 export const TREE_SPECIES: TreeSpecies[] = [
 	{

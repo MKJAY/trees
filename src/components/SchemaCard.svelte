@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { Schema } from '../types/tree-species.type';
+	import type { Schema } from '../types/tree-species';
 
+	// Props
 	export let schema: Schema;
 </script>
 
@@ -18,6 +19,9 @@
 
 <style lang="scss">
 	.schema-card {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
 		padding: 8px;
 		background-color: var(--color-grey);
 		border-radius: 8px;
@@ -30,7 +34,6 @@
 			display: grid;
 			column-gap: 8px;
 			row-gap: 2px;
-			margin-top: 4px;
 
 			& > div {
 				border: 1px solid var(--color-black);

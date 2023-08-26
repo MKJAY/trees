@@ -1,7 +1,8 @@
 <script lang="ts">
-	import TreeCard from '../components/TreeSpeciesCard.svelte';
-	import { TREE_SPECIES } from '../constants/tree-species.constant';
-	import type { TreeSpecies } from '../types/tree-species.type';
+	import TreeSpeciesCard from '../components/TreeSpeciesCard.svelte';
+	import NavBar from '../components/generic/NavBar.svelte';
+	import { TREE_SPECIES } from '../constants/tree-species';
+	import type { TreeSpecies } from '../types/tree-species';
 
 	TREE_SPECIES.sort((a: TreeSpecies, b: TreeSpecies): number => {
 		return a.scientificName.localeCompare(b.scientificName);
@@ -10,41 +11,49 @@
 
 <div class="container">
 	<div class="header">
-		<h1 class="font-regular-30-34">Boomsoorten</h1>
-		<div class="info">
-			<span>Aantal: {TREE_SPECIES.length}</span>
+		<div class="title">
+			<h1 class="font-regular-30-34">Boomsoorten</h1>
+			<div class="info">
+				<span>Aantal: {TREE_SPECIES.length}</span>
+			</div>
 		</div>
+		<NavBar />
 	</div>
 	<div class="content">
 		{#each TREE_SPECIES as treeSpecies}
-			<TreeCard {treeSpecies} />
+			<TreeSpeciesCard {treeSpecies} />
 		{/each}
 	</div>
 </div>
 
 <style lang="scss">
 	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 		padding: 16px;
-
-		& > div:not(:first-of-type) {
-			margin-top: 16px;
-		}
 
 		.header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 
-			.info {
+			.title {
 				display: flex;
-				flex-direction: column;
+				align-items: center;
+				gap: 16px;
+
+				.info {
+					border-left: 1px solid var(--color-black);
+					padding-left: 16px;
+				}
 			}
 		}
 
 		.content {
-			:global(.tree-species-card):not(:first-of-type) {
-				margin-top: 16px;
-			}
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
 		}
 	}
 </style>

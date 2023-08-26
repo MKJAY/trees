@@ -1,4 +1,4 @@
-import type { Schema } from '../types/tree-species.type';
+import type { Schema } from '../types/tree-species';
 
 const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 	'Minder tolerant',

@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { Image } from '../types/tree-species.type';
+	import type { Image } from '../types/tree-species';
 
+	// Props
 	export let image: Image;
 
 	let fullscreenImageIsEnabled = false;

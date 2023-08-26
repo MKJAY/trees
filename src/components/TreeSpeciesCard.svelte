@@ -1,16 +1,10 @@
 <script lang="ts">
-	import { TREE_SPECIES } from '../constants/tree-species.constant';
-	import type { TreeSpecies } from '../types/tree-species.type';
+	import type { TreeSpecies } from '../types/tree-species';
 	import ImageCard from './ImageCard.svelte';
 	import SchemaCard from './SchemaCard.svelte';
 
+	// Props
 	export let treeSpecies: TreeSpecies;
-
-	const getTreeSpecies = (scientificName: string): TreeSpecies | undefined => {
-		return TREE_SPECIES.find((treeSpecies: TreeSpecies): boolean => {
-			return treeSpecies.scientificName === scientificName;
-		});
-	};
 
 	const scrollToTreeSpeciesCard = (scientificName: string) => {
 		const treeSpeciesCard = document.getElementById(scientificName);
@@ -143,12 +137,15 @@
 
 		.main-content {
 			flex: 1;
-
-			& > div:not(:first-of-type) {
-				margin-top: 16px;
-			}
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
 
 			.info {
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+
 				h1,
 				h3 {
 					display: flex;
@@ -165,12 +162,6 @@
 							opacity: 0.32;
 						}
 					}
-				}
-
-				h3,
-				h5,
-				a {
-					margin-top: 4px;
 				}
 
 				h5 {
@@ -195,28 +186,19 @@
 				}
 			}
 
-			.determination-characteristics {
-				ul {
-					margin-top: 4px;
-				}
-			}
-
+			.determination-characteristics,
 			.similar-tree-species {
-				ul {
-					margin-top: 4px;
-				}
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
 			}
 		}
 
 		.side-content {
-			& > div:not(:first-of-type) {
-				margin-top: 16px;
-			}
-
 			.species-specific-characteristics {
-				:global(.schema-card):not(:first-of-type) {
-					margin-top: 16px;
-				}
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
 			}
 		}
 	}
