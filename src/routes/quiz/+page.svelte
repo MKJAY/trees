@@ -3,30 +3,39 @@
 	import Button from '../../components/generic/Button.svelte';
 	import NavBar from '../../components/generic/NavBar.svelte';
 	import { TREE_SPECIES } from '../../constants/tree-species';
-	import type { TreeSpecies } from '../../types/tree-species';
 
-	let treeSpecies: TreeSpecies;
-	let namesAreBlurred: boolean;
+	const shuffledTreeSpecies = TREE_SPECIES.sort(() => Math.random() - 0.5);
 
-	const nextRandomTreeSpecies = () => {
-		treeSpecies = TREE_SPECIES[Math.floor(Math.random() * TREE_SPECIES.length)];
+	let currentTreeSpeciesIndex = 0;
+	let namesAreBlurred = true;
+
+	const updateCurrentTreeSpeciesIndex = (isNext: boolean) => {
+		if (isNext) {
+			currentTreeSpeciesIndex++;
+		} else {
+			currentTreeSpeciesIndex += currentTreeSpeciesIndex > 0 ? -1 : 0;
+		}
+
 		namesAreBlurred = true;
 	};
-
-	nextRandomTreeSpecies();
 </script>
 
 <div class="container">
 	<div class="header">
 		<h1 class="font-regular-30-34">Quiz</h1>
 		<div class="actions">
-			<Button label="Next" on:click={nextRandomTreeSpecies} />
+			<Button
+				label="Back"
+				isDisabled={currentTreeSpeciesIndex === 0}
+				on:click={() => updateCurrentTreeSpeciesIndex(false)}
+			/>
 			<Button label="Show" on:click={() => (namesAreBlurred = false)} />
+			<Button label="Next" on:click={() => updateCurrentTreeSpeciesIndex(true)} />
 		</div>
 		<NavBar />
 	</div>
 	<div class="content" class:blurred-names={namesAreBlurred}>
-		<TreeSpeciesCard {treeSpecies} />
+		<TreeSpeciesCard treeSpecies={shuffledTreeSpecies[currentTreeSpeciesIndex]} />
 	</div>
 </div>
 

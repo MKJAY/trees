@@ -5,6 +5,13 @@
 
 	// Props
 	export let label: string;
+	export let isDisabled: boolean | undefined = undefined;
 </script>
 
-<button on:click={() => dispatch('click')}>{label}</button>
+<button disabled={isDisabled} on:click={() => !isDisabled && dispatch('click')}>{label}</button>
+
+<style lang="scss">
+	button:disabled {
+		cursor: unset;
+	}
+</style>
