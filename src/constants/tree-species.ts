@@ -4002,19 +4002,19 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
+				activeBlockIndexes: [1]
 			},
 			saltInSoilToleranceSchema: {
 				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
+				activeBlockIndexes: [0]
 			},
 			saltSprayToleranceSchema: {
 				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
+				activeBlockIndexes: [0]
 			},
 			coastalWindToleranceSchema: {
 				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
+				activeBlockIndexes: [0]
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
