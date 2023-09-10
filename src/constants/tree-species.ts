@@ -39,7 +39,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/abies-alba/bark-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -131,7 +131,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/abies-grandis/bark-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -208,7 +208,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-campestre/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -268,7 +268,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/robinia-pseudoacacia/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -329,7 +329,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-robur/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -390,7 +390,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-petraea/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -456,7 +456,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-rubra/leaf-2.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -518,7 +518,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/alnus-cordata/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -584,7 +584,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/alnus-glutinosa/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -646,7 +646,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/alnus-incana/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -711,7 +711,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/alnus-x-spaethii-'spaeth'/leaf-1.webp"
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -773,7 +773,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/gleditsia-triacanthos/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -834,7 +834,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/platanus-x-hispanica/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -894,7 +894,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-pendula/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -966,7 +966,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/styphnolobium-japonicum/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1036,7 +1036,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-alba/leaf-3.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1094,7 +1094,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ginkgo-biloba/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1155,7 +1155,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ailanthus-altissima/leaf-1.png'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1216,7 +1216,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-excelsior/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1276,7 +1276,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/crataegus-monogyna/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1336,7 +1336,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sorbus-aucuparia/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1397,7 +1397,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fagus-sylvatica/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1458,7 +1458,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/carpinus-betulus/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1520,7 +1520,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/aesculus-hippocastanum/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1586,7 +1586,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-avium/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1647,7 +1647,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/salix-alba/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1714,7 +1714,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-cordata/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1780,7 +1780,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-platyphyllos/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1842,7 +1842,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-tomentosa/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1905,7 +1905,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-x-europaea/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1972,7 +1972,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-nigra/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2031,7 +2031,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-pseudoplatanus/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2090,7 +2090,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-platanoides/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2151,7 +2151,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/aesculus-x-carnea/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2212,7 +2212,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/platanus-orientalis/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2278,7 +2278,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-negundo/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2344,7 +2344,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-saccharinum/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2404,7 +2404,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-cappadocicum/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2474,7 +2474,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-x-freemanii/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2544,7 +2544,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-rubrum/leaf-3.JPG'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2605,7 +2605,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-utilis/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2667,7 +2667,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-nigra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2728,7 +2728,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-pubescens/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2798,7 +2798,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/castanea-sativa/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2860,7 +2860,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/catalpa-bignonioides/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2921,7 +2921,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/cedrus-libani/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2984,7 +2984,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/cercidiphyllum-japonicum/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3047,7 +3047,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/chamaecyparis-lawsoniana/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3111,7 +3111,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/corylus-colurna/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3174,7 +3174,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/davidia-involucrata/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3237,7 +3237,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-angustifolia/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3303,7 +3303,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-ornus/flower-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3364,7 +3364,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-americana/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3427,7 +3427,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/juglans-regia/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -3489,7 +3489,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/juglans-nigra/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -3551,7 +3551,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/koelreuteria-paniculata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3615,7 +3615,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/laburnum-x-watereri/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -3678,7 +3678,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/larix-decidua/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3741,7 +3741,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/liquidambar-styraciflua/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3802,7 +3802,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/liriodendron-tulipifera/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3867,7 +3867,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/magnolia-kobus/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3929,7 +3929,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/malus-sylvestris/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3992,7 +3992,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/metasequoia-glyptostroboides/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4055,7 +4055,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/morus-alba/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4116,7 +4116,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/morus-nigra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4178,7 +4178,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/nothofagus-antarctica/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4246,7 +4246,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ostrya-carpinifolia/flower-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4308,7 +4308,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/parrotia-persica/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4372,7 +4372,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/paulownia-tomentosa/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4435,7 +4435,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/picea-abies/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4498,7 +4498,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pinus-nigra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4562,7 +4562,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pinus-sylvestris/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4631,7 +4631,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-x-canescens/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -4691,7 +4691,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-tremula/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -4753,7 +4753,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-x-canadensis/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -4816,7 +4816,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-cerasifera/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4876,7 +4876,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-serrulata/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4937,7 +4937,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-padus/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4997,7 +4997,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-serotina/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5061,7 +5061,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pseudotsuga-menziesii/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5124,7 +5124,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pterocarya-fraxinifolia/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -5190,7 +5190,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pyrus-calleryana/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5275,7 +5275,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-cerris/leaf-7.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5340,7 +5340,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-frainetto/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5410,7 +5410,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-palustris/leaf-3.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5476,7 +5476,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-ilex/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5537,7 +5537,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-phellos/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5601,7 +5601,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/quercus-x-turneri-'pseudoturneri'/leaf-1.jpeg"
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5683,7 +5683,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-x-hispanica/leaf-5.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5747,7 +5747,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/salix-x-sepulcralis-'chrysocoma'/leaf-1.jpeg"
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5813,7 +5813,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sequoiadendron-giganteum/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5880,7 +5880,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sorbus-aria/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5941,7 +5941,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sorbus-intermedia/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6001,7 +6001,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/taxodium-distichum/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6064,7 +6064,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/taxus-baccata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6127,7 +6127,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/thuja-plicata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6190,7 +6190,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ulmus-minor/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6253,7 +6253,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ulmus-glabra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6316,7 +6316,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/zelkova-serrata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristics: {
+		speciesSpecificCharacteristicSchemas: {
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],

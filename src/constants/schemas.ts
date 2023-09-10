@@ -1,5 +1,18 @@
 import type { Schema } from '../types/tree-species';
 
+export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
+	'soilCompactionToleranceSchema',
+	'saltInSoilToleranceSchema',
+	'saltSprayToleranceSchema',
+	'coastalWindToleranceSchema',
+	'windthrowToleranceSchema',
+	'branchBreakToleranceSchema',
+	'airPollutionToleranceSchema',
+	'springFrostToleranceSchema',
+	'bleedingToleranceSchema',
+	'basalShootsToleranceSchema'
+];
+
 const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 	'Minder tolerant',
 	'Matig tolerant',

@@ -5,7 +5,7 @@ export interface TreeSpecies {
 	otherDutchNames?: string[];
 	crossedTreeSpeciesScientificNames?: string[];
 	images?: Image[];
-	speciesSpecificCharacteristics: {
+	speciesSpecificCharacteristicSchemas: {
 		soilCompactionToleranceSchema?: Schema;
 		saltInSoilToleranceSchema?: Schema;
 		saltSprayToleranceSchema?: Schema;

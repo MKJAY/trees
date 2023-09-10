@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES } from '../constants/schemas';
 	import type { TreeSpecies } from '../types/tree-species';
 	import ImageCard from './ImageCard.svelte';
 	import SchemaCard from './SchemaCard.svelte';
@@ -111,11 +112,11 @@
 		{/if}
 	</div>
 	<div class="side-content">
-		{#if treeSpecies.speciesSpecificCharacteristics}
+		{#if Object.keys(treeSpecies.speciesSpecificCharacteristicSchemas).length}
 			<div class="species-specific-characteristics">
-				{#each Object.entries(treeSpecies.speciesSpecificCharacteristics) as [_, schema]}
-					{#if schema}
-						<SchemaCard {schema} />
+				{#each SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES as name}
+					{#if treeSpecies.speciesSpecificCharacteristicSchemas[name]}
+						<SchemaCard schema={treeSpecies.speciesSpecificCharacteristicSchemas[name]} />
 					{/if}
 				{/each}
 			</div>
