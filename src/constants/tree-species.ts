@@ -1,6 +1,8 @@
 import type { TreeSpecies } from '../types/tree-species';
 import {
 	AIR_POLLUTION_TOLERANCE_SCHEMA,
+	BASAL_SHOOTS_TOLERANCE_SCHEMA,
+	BLEEDING_TOLERANCE_SCHEMA,
 	BRANCH_BREAK_TOLERANCE_SCHEMA,
 	COASTAL_WIND_TOLERANCE_SCHEMA,
 	SALT_IN_SOIL_TOLERANCE_SCHEMA,
@@ -38,6 +40,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -60,12 +72,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -75,7 +87,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -120,6 +132,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -142,12 +164,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -157,7 +179,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -187,6 +209,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -206,12 +237,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -221,7 +252,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -238,6 +269,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -258,7 +299,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
@@ -272,7 +313,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -289,6 +330,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -309,12 +360,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -324,7 +375,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -340,6 +391,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -361,12 +422,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -376,7 +437,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -396,6 +457,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -417,12 +488,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -432,7 +503,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -448,6 +519,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -468,12 +549,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -483,7 +564,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -504,6 +585,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -524,12 +615,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -539,7 +630,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -556,6 +647,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -576,12 +677,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -591,7 +692,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -611,6 +712,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -632,12 +743,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -647,7 +758,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -663,6 +774,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -683,7 +803,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
@@ -697,7 +817,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -715,6 +835,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -735,12 +865,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -749,7 +879,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -765,6 +895,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -786,12 +925,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -801,7 +940,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -828,6 +967,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -849,12 +998,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -864,7 +1013,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -888,6 +1037,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -907,12 +1064,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -922,7 +1079,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -938,6 +1095,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -959,12 +1126,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -973,7 +1140,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -989,6 +1156,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1010,7 +1187,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
@@ -1024,7 +1201,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1040,6 +1217,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1059,12 +1246,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1074,7 +1261,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1090,6 +1277,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1115,7 +1311,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1125,7 +1321,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1141,6 +1337,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1162,12 +1367,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1177,7 +1382,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1193,6 +1398,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1218,7 +1432,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1228,7 +1442,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1245,6 +1459,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1266,12 +1489,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1281,7 +1504,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1298,6 +1521,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1319,12 +1551,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1334,7 +1566,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1355,6 +1587,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1389,7 +1631,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1406,6 +1648,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1427,12 +1679,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1442,7 +1694,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1463,6 +1715,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1483,12 +1745,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1498,7 +1760,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1519,6 +1781,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1540,12 +1812,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1555,7 +1827,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1571,6 +1843,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1591,12 +1873,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1606,7 +1888,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1624,6 +1906,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1645,12 +1937,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1660,7 +1952,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1681,6 +1973,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1700,12 +2000,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1715,7 +2015,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1732,6 +2032,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1751,12 +2060,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1766,7 +2075,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1782,6 +2091,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1802,12 +2120,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1817,7 +2135,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1834,6 +2152,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1855,12 +2182,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1870,7 +2197,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1886,6 +2213,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1907,12 +2244,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1921,7 +2258,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1942,6 +2279,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -1963,12 +2309,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -1978,7 +2324,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -1999,6 +2345,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2020,7 +2375,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
@@ -2034,7 +2389,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2050,6 +2405,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2072,12 +2436,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2087,7 +2451,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2111,6 +2475,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2133,12 +2506,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2148,7 +2521,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2172,6 +2545,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2193,12 +2575,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2208,7 +2590,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2224,6 +2606,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2245,12 +2636,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2260,7 +2651,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2277,6 +2668,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2298,12 +2698,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2313,7 +2713,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2329,6 +2729,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2350,12 +2759,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2365,7 +2774,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2390,6 +2799,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2411,12 +2829,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2426,7 +2844,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2443,6 +2861,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2468,7 +2895,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2478,7 +2905,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2495,6 +2922,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2517,12 +2954,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2532,7 +2969,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2548,6 +2985,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2569,12 +3016,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2584,7 +3031,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2601,6 +3048,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2623,12 +3080,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2638,7 +3095,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2655,6 +3112,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2676,12 +3143,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2691,7 +3158,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2708,6 +3175,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2730,12 +3207,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2745,7 +3222,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2761,6 +3238,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2781,12 +3268,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2796,7 +3283,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2817,6 +3304,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2837,12 +3334,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2852,7 +3349,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2868,6 +3365,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2889,12 +3396,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2904,7 +3411,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2921,6 +3428,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2942,12 +3458,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -2957,7 +3473,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -2974,6 +3490,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -2995,12 +3520,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3010,7 +3535,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3027,6 +3552,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3049,12 +3584,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3064,7 +3599,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3081,6 +3616,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3103,12 +3647,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3118,7 +3662,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3135,6 +3679,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3157,12 +3711,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3172,7 +3726,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3188,6 +3742,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3208,7 +3772,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
@@ -3222,7 +3786,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3239,6 +3803,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3260,7 +3834,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
@@ -3274,7 +3848,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3294,6 +3868,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3315,12 +3899,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3330,7 +3914,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3346,6 +3930,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3368,12 +3961,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3383,7 +3976,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3400,6 +3993,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3422,12 +4025,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3437,7 +4040,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3453,6 +4056,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3473,12 +4086,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3488,7 +4101,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3504,6 +4117,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3524,12 +4147,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3539,7 +4162,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3556,6 +4179,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3578,12 +4211,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3593,7 +4226,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3614,6 +4247,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3635,12 +4278,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3650,7 +4293,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3666,6 +4309,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3688,12 +4341,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3703,7 +4356,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3720,6 +4373,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3742,12 +4405,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3757,7 +4420,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3773,6 +4436,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3795,12 +4468,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3810,7 +4483,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3826,6 +4499,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3848,12 +4531,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3863,7 +4546,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3880,6 +4563,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3902,12 +4595,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3917,7 +4610,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3939,6 +4632,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -3959,12 +4660,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -3974,7 +4675,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -3991,6 +4692,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4011,12 +4720,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4026,7 +4735,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4045,6 +4754,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4065,12 +4782,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4080,7 +4797,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4100,6 +4817,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4134,7 +4861,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4150,6 +4877,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4184,7 +4921,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4201,6 +4938,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4235,7 +4982,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4251,6 +4998,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4285,7 +5042,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4305,6 +5062,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4326,12 +5093,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4341,7 +5108,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4358,6 +5125,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4380,12 +5156,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4395,7 +5171,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4415,6 +5191,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4435,12 +5220,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4450,7 +5235,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4491,6 +5276,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4511,12 +5306,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4526,7 +5321,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4546,6 +5341,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4567,12 +5372,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4582,7 +5387,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4606,6 +5411,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4627,12 +5442,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4642,7 +5457,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4662,6 +5477,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4682,12 +5507,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4697,7 +5522,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4713,6 +5538,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4734,12 +5569,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4749,7 +5584,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4767,6 +5602,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4788,12 +5633,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4803,7 +5648,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4839,6 +5684,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4860,12 +5715,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4875,7 +5730,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4893,6 +5748,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4914,12 +5779,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4929,7 +5794,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -4949,6 +5814,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -4971,12 +5846,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -4986,7 +5861,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5006,6 +5881,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5027,12 +5911,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5042,7 +5926,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5058,6 +5942,15 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5078,12 +5971,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5093,7 +5986,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5109,6 +6002,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5130,12 +6033,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5145,7 +6048,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5162,6 +6065,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5184,12 +6097,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5199,7 +6112,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5215,6 +6128,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5236,12 +6159,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5251,7 +6174,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5268,6 +6191,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5289,12 +6222,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5304,7 +6237,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5321,6 +6254,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5342,12 +6285,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5357,7 +6300,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},
@@ -5374,6 +6317,16 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristics: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			soilCompactionToleranceSchema: {
 				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0],
@@ -5396,12 +6349,12 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			windthrowToleranceSchema: {
 				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			branchBreakToleranceSchema: {
 				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			},
 			airPollutionToleranceSchema: {
@@ -5411,7 +6364,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			},
 			springFrostToleranceSchema: {
 				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2],
+				activeBlockIndexes: [1],
 				isDisabled: true
 			}
 		},

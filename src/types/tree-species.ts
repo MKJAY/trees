@@ -14,6 +14,8 @@ export interface TreeSpecies {
 		branchBreakToleranceSchema?: Schema;
 		airPollutionToleranceSchema?: Schema;
 		springFrostToleranceSchema?: Schema;
+		bleedingToleranceSchema?: Schema;
+		basalShootsToleranceSchema?: Schema;
 	};
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];

@@ -45,3 +45,13 @@ export const SPRING_FROST_TOLERANCE_SCHEMA: Schema = {
 	label: 'Tolerantie voor voorjaarsvorst',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
+
+export const BLEEDING_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor bloeden',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
+
+export const BASAL_SHOOTS_TOLERANCE_SCHEMA: Schema = {
+	label: 'Tolerantie voor waterlot',
+	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
