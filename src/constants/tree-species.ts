@@ -3979,6 +3979,63 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [1],
 				isDisabled: true
 			}
+		}
+	},
+	{
+		scientificName: "Malus 'Golden Hornet'",
+		dutchName: { value: 'Sierappel' },
+		images: [
+			{
+				label: 'Blad',
+				source: "images/malus-'golden hornet'/leaf-1.jpg"
+			}
+		],
+		speciesSpecificCharacteristicSchemas: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+			},
+			coastalWindToleranceSchema: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+			},
+			windthrowToleranceSchema: {
+				...WINDTHROW_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			branchBreakToleranceSchema: {
+				...BRANCH_BREAK_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			airPollutionToleranceSchema: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			springFrostToleranceSchema: {
+				...SPRING_FROST_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			}
 		},
 		isETW: true
 	},
@@ -5240,6 +5297,66 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		},
 		isETW: true
+	},
+	{
+		scientificName: 'Pyrus communis',
+		dutchName: {
+			value: 'Wilde peer'
+		},
+		images: [
+			{
+				label: 'Blad',
+				source: 'images/pyrus-communis/leaf-1.jpg'
+			}
+		],
+		speciesSpecificCharacteristicSchemas: {
+			bleedingToleranceSchema: {
+				...BLEEDING_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			basalShootsToleranceSchema: {
+				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			soilCompactionToleranceSchema: {
+				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1]
+			},
+			saltInSoilToleranceSchema: {
+				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
+			saltSprayToleranceSchema: {
+				...SALT_SPRAY_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			coastalWindToleranceSchema: {
+				...COASTAL_WIND_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
+			windthrowToleranceSchema: {
+				...WINDTHROW_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			branchBreakToleranceSchema: {
+				...BRANCH_BREAK_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
+			airPollutionToleranceSchema: {
+				...AIR_POLLUTION_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [0],
+				isDisabled: true
+			},
+			springFrostToleranceSchema: {
+				...SPRING_FROST_TOLERANCE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			}
+		}
 	},
 	{
 		scientificName: 'Quercus cerris',
