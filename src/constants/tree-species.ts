@@ -5,6 +5,7 @@ import {
 	BLEEDING_TOLERANCE_SCHEMA,
 	BRANCH_BREAK_TOLERANCE_SCHEMA,
 	COASTAL_WIND_TOLERANCE_SCHEMA,
+	SAGGING_BRANCHES_GRADE_SCHEMA,
 	SALT_IN_SOIL_TOLERANCE_SCHEMA,
 	SALT_SPRAY_TOLERANCE_SCHEMA,
 	SOIL_COMPACTION_TOLERANCE_SCHEMA,
@@ -40,6 +41,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -132,6 +138,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -209,6 +220,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -269,6 +285,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -330,6 +351,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -391,6 +417,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -457,6 +488,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -519,6 +555,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -585,6 +626,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -647,6 +693,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -712,6 +763,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -774,6 +830,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -835,6 +896,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -895,6 +960,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -967,6 +1037,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1037,6 +1112,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1095,6 +1174,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1156,6 +1240,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1217,6 +1306,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1277,6 +1371,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1337,6 +1436,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1398,6 +1502,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1459,6 +1568,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1521,6 +1635,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -1587,6 +1706,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1648,6 +1772,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1715,6 +1844,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1781,6 +1914,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1843,6 +1980,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1906,6 +2047,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1973,6 +2118,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2032,6 +2181,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2091,6 +2245,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2152,6 +2311,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2213,6 +2377,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2279,6 +2447,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2345,6 +2518,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2405,6 +2583,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2475,6 +2658,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2545,6 +2733,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2606,6 +2799,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2668,6 +2866,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2729,6 +2932,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -2799,6 +3007,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2861,6 +3074,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2922,6 +3140,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2985,6 +3208,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3048,6 +3276,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3112,6 +3345,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3175,6 +3413,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3238,6 +3481,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3304,6 +3552,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3365,6 +3618,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3428,6 +3686,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -3490,6 +3753,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -3552,6 +3820,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3616,6 +3889,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -3679,6 +3957,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3742,6 +4025,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3803,6 +4091,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3868,6 +4161,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3930,6 +4228,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3991,6 +4294,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4050,6 +4358,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4113,6 +4426,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4174,6 +4492,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4236,6 +4559,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4304,6 +4632,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4366,6 +4699,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4430,6 +4768,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4493,6 +4836,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4556,6 +4904,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4620,6 +4973,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4689,6 +5047,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -4749,6 +5111,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -4811,6 +5177,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -4874,6 +5244,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4934,6 +5309,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4995,6 +5375,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5055,6 +5440,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5119,6 +5509,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5182,6 +5577,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [0]
@@ -5248,6 +5648,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5310,6 +5715,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5393,6 +5803,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5458,6 +5873,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5528,6 +5948,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5594,6 +6019,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5655,6 +6085,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5719,6 +6154,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5801,6 +6241,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5865,6 +6310,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5931,6 +6381,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5998,6 +6453,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6059,6 +6519,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6119,6 +6584,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6182,6 +6652,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6245,6 +6720,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6308,6 +6788,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6371,6 +6856,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6434,6 +6924,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			saggingBranchesGradeSchema: {
+				...SAGGING_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			bleedingToleranceSchema: {
 				...BLEEDING_TOLERANCE_SCHEMA,
 				activeBlockIndexes: [1],

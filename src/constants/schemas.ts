@@ -10,7 +10,8 @@ export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
 	'airPollutionToleranceSchema',
 	'springFrostToleranceSchema',
 	'bleedingToleranceSchema',
-	'basalShootsToleranceSchema'
+	'basalShootsToleranceSchema',
+	'saggingBranchesGradeSchema'
 ];
 
 const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
@@ -18,6 +19,8 @@ const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 	'Matig tolerant',
 	'Meer tolerant'
 ];
+
+const GRADE_SCHEMA_BLOCK_LABELS: string[] = ['Zwak', 'Matig', 'Sterk'];
 
 export const SOIL_COMPACTION_TOLERANCE_SCHEMA: Schema = {
 	label: 'Tolerantie voor bodemverdichting',
@@ -67,4 +70,9 @@ export const BLEEDING_TOLERANCE_SCHEMA: Schema = {
 export const BASAL_SHOOTS_TOLERANCE_SCHEMA: Schema = {
 	label: 'Tolerantie voor waterlot',
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+};
+
+export const SAGGING_BRANCHES_GRADE_SCHEMA: Schema = {
+	label: 'Mate van doorhangende takken',
+	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
