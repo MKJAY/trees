@@ -10,6 +10,7 @@ import {
 	SALT_SPRAY_TOLERANCE_SCHEMA,
 	SOIL_COMPACTION_TOLERANCE_SCHEMA,
 	SPRING_FROST_TOLERANCE_SCHEMA,
+	SUCKER_BRANCHES_GRADE_SCHEMA,
 	WINDTHROW_TOLERANCE_SCHEMA
 } from './schemas';
 
@@ -41,6 +42,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -138,6 +144,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -220,6 +231,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -285,6 +300,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -351,6 +370,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -417,6 +441,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -488,6 +517,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -555,6 +589,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -626,6 +665,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -693,6 +737,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -763,6 +812,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -830,6 +884,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -896,6 +955,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -960,6 +1024,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1037,6 +1106,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1112,6 +1186,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -1174,6 +1253,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1240,6 +1324,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1306,6 +1395,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1371,6 +1465,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1436,6 +1534,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1502,6 +1605,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1568,6 +1675,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1635,6 +1747,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1706,6 +1823,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1772,6 +1893,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1844,6 +1970,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -1914,6 +2045,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -1980,6 +2116,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2047,6 +2188,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2118,6 +2264,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2181,6 +2332,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2245,6 +2400,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2311,6 +2470,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2377,6 +2541,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2447,6 +2616,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2518,6 +2691,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2583,6 +2760,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2658,6 +2839,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2733,6 +2918,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2799,6 +2988,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2866,6 +3060,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2932,6 +3131,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3007,6 +3211,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3074,6 +3283,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3140,6 +3354,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3208,6 +3427,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3276,6 +3500,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3345,6 +3574,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3413,6 +3647,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3481,6 +3720,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3552,6 +3796,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3618,6 +3867,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3686,6 +3940,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3753,6 +4012,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3820,6 +4084,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3889,6 +4158,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3957,6 +4231,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4025,6 +4304,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4091,6 +4375,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4161,6 +4450,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4228,6 +4522,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4294,6 +4593,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4358,6 +4662,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4426,6 +4735,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4492,6 +4806,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4559,6 +4878,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4632,6 +4956,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4699,6 +5028,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4768,6 +5102,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4836,6 +5175,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4904,6 +5248,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4973,6 +5322,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5047,6 +5401,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -5111,6 +5470,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -5177,6 +5541,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -5244,6 +5613,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5309,6 +5682,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5375,6 +5752,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5440,6 +5821,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5509,6 +5894,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5577,6 +5967,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5648,6 +6043,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5715,6 +6115,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5803,6 +6208,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5873,6 +6283,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5948,6 +6363,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6019,6 +6439,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6085,6 +6510,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6154,6 +6584,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6241,6 +6676,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6310,6 +6750,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6381,6 +6826,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6453,6 +6903,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6519,6 +6974,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6584,6 +7044,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6652,6 +7117,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6720,6 +7190,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6788,6 +7263,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6856,6 +7335,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6924,6 +7407,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			suckerBranchesGradeSchema: {
+				...SUCKER_BRANCHES_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			saggingBranchesGradeSchema: {
 				...SAGGING_BRANCHES_GRADE_SCHEMA,
 				activeBlockIndexes: [1],

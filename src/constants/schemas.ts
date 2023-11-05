@@ -11,6 +11,7 @@ export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
 	'springFrostToleranceSchema',
 	'bleedingToleranceSchema',
 	'basalShootsToleranceSchema',
+	'suckerBranchesGradeSchema',
 	'saggingBranchesGradeSchema'
 ];
 
@@ -74,5 +75,10 @@ export const BASAL_SHOOTS_TOLERANCE_SCHEMA: Schema = {
 
 export const SAGGING_BRANCHES_GRADE_SCHEMA: Schema = {
 	label: 'Mate van doorhangende takken',
+	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
+};
+
+export const SUCKER_BRANCHES_GRADE_SCHEMA: Schema = {
+	label: 'Vorming van zuigers en/of elleboogtakken',
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
