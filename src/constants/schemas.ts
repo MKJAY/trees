@@ -12,6 +12,7 @@ export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
 	'bleedingToleranceSchema',
 	'waterShootsGradeSchema',
 	'suckerBranchesGradeSchema',
+	'multipleBranchesOnSameHeightGradeSchema',
 	'coDominantStemsWithIncludedBarkGradeSchema',
 	'saggingBranchesGradeSchema'
 ];
@@ -89,3 +90,7 @@ export const CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA: Schema = {
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
 
+export const MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA: Schema = {
+	label: 'Vorming van takparen -of kransen',
+	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
+};
