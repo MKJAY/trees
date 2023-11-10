@@ -68,9 +68,9 @@ export const BLEEDING_TOLERANCE_SCHEMA: Schema = {
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
 
-export const BASAL_SHOOTS_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor waterlot',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
+export const BASAL_SHOOTS_GRADE_SCHEMA: Schema = {
+	label: 'Vorming van waterlot',
+	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
 
 export const SAGGING_BRANCHES_GRADE_SCHEMA: Schema = {

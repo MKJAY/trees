@@ -1,7 +1,7 @@
 import type { TreeSpecies } from '../types/tree-species';
 import {
 	AIR_POLLUTION_TOLERANCE_SCHEMA,
-	BASAL_SHOOTS_TOLERANCE_SCHEMA,
+	BASAL_SHOOTS_GRADE_SCHEMA,
 	BLEEDING_TOLERANCE_SCHEMA,
 	BRANCH_BREAK_TOLERANCE_SCHEMA,
 	COASTAL_WIND_TOLERANCE_SCHEMA,
@@ -58,7 +58,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -160,7 +160,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -245,7 +245,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -315,7 +315,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -386,7 +386,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -457,7 +457,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -533,7 +533,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -605,7 +605,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -681,7 +681,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -753,7 +753,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -828,7 +828,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -899,7 +899,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -970,7 +970,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1039,7 +1039,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1122,7 +1122,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1200,7 +1200,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -1269,7 +1269,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1340,7 +1340,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1411,7 +1411,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1480,7 +1480,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -1550,7 +1550,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -1619,7 +1619,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1690,7 +1690,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1762,7 +1762,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1838,7 +1838,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1909,7 +1909,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -1985,7 +1985,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2060,7 +2060,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2131,7 +2131,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2203,7 +2203,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2278,7 +2278,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -2346,7 +2346,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2414,7 +2414,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2485,7 +2485,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2556,7 +2556,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2630,7 +2630,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2705,7 +2705,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2774,7 +2774,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2853,7 +2853,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -2932,7 +2932,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3003,7 +3003,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3075,7 +3075,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3146,7 +3146,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3227,7 +3227,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -3299,7 +3299,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -3370,7 +3370,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3443,7 +3443,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3516,7 +3516,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3590,7 +3590,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3663,7 +3663,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3736,7 +3736,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3812,7 +3812,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3883,7 +3883,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -3955,7 +3955,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4027,7 +4027,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4100,7 +4100,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4173,7 +4173,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4247,7 +4247,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4320,7 +4320,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4391,7 +4391,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4466,7 +4466,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4538,7 +4538,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -4609,7 +4609,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -4678,7 +4678,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4751,7 +4751,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4822,7 +4822,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4894,7 +4894,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -4972,7 +4972,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5044,7 +5044,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5118,7 +5118,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5191,7 +5191,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5264,7 +5264,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5338,7 +5338,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5415,7 +5415,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -5484,7 +5484,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -5555,7 +5555,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -5628,7 +5628,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5697,7 +5697,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5767,7 +5767,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5836,7 +5836,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5910,7 +5910,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -5982,7 +5982,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				activeBlockIndexes: [0]
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6059,7 +6059,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -6131,7 +6131,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -6224,7 +6224,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6299,7 +6299,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6379,7 +6379,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6455,7 +6455,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6526,7 +6526,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6600,7 +6600,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6692,7 +6692,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6766,7 +6766,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6842,7 +6842,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -6919,7 +6919,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -6990,7 +6990,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [0]
 			},
 			soilCompactionToleranceSchema: {
@@ -7060,7 +7060,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -7133,7 +7133,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -7206,7 +7206,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -7278,7 +7278,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -7350,7 +7350,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
@@ -7423,7 +7423,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				isDisabled: true
 			},
 			basalShootsToleranceSchema: {
-				...BASAL_SHOOTS_TOLERANCE_SCHEMA,
+				...BASAL_SHOOTS_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
 				isDisabled: true
 			},
