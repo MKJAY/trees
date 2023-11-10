@@ -15,7 +15,7 @@ export interface TreeSpecies {
 		airPollutionToleranceSchema?: Schema;
 		springFrostToleranceSchema?: Schema;
 		bleedingToleranceSchema?: Schema;
-		basalShootsToleranceSchema?: Schema;
+		waterShootsGradeSchema?: Schema;
 		saggingBranchesGradeSchema?: Schema;
 		suckerBranchesGradeSchema?: Schema;
 	};

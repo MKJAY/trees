@@ -10,7 +10,7 @@ export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
 	'airPollutionToleranceSchema',
 	'springFrostToleranceSchema',
 	'bleedingToleranceSchema',
-	'basalShootsToleranceSchema',
+	'waterShootsGradeSchema',
 	'suckerBranchesGradeSchema',
 	'saggingBranchesGradeSchema'
 ];
@@ -68,7 +68,7 @@ export const BLEEDING_TOLERANCE_SCHEMA: Schema = {
 	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
 };
 
-export const BASAL_SHOOTS_GRADE_SCHEMA: Schema = {
+export const WATER_SHOOTS_GRADE_SCHEMA: Schema = {
 	label: 'Vorming van waterlot',
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
