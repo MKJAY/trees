@@ -12,6 +12,7 @@ export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
 	'bleedingToleranceSchema',
 	'waterShootsGradeSchema',
 	'suckerBranchesGradeSchema',
+	'coDominantStemsWithIncludedBarkGradeSchema',
 	'saggingBranchesGradeSchema'
 ];
 
@@ -82,3 +83,9 @@ export const SUCKER_BRANCHES_GRADE_SCHEMA: Schema = {
 	label: 'Vorming van zuigers en/of elleboogtakken',
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
+
+export const CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA: Schema = {
+	label: 'Vorming van plakoksels',
+	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
+};
+

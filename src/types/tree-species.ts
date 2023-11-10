@@ -18,6 +18,7 @@ export interface TreeSpecies {
 		waterShootsGradeSchema?: Schema;
 		saggingBranchesGradeSchema?: Schema;
 		suckerBranchesGradeSchema?: Schema;
+		coDominantStemsWithIncludedBarkGradeSchema?: Schema;
 	};
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];
