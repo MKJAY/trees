@@ -14,7 +14,8 @@ export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
 	'suckerBranchesGradeSchema',
 	'multipleBranchesOnSameHeightGradeSchema',
 	'coDominantStemsWithIncludedBarkGradeSchema',
-	'saggingBranchesGradeSchema'
+	'saggingBranchesGradeSchema',
+	'easyCatchOnGradeSchema'
 ];
 
 const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
@@ -75,13 +76,13 @@ export const WATER_SHOOTS_GRADE_SCHEMA: Schema = {
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
 
-export const SAGGING_BRANCHES_GRADE_SCHEMA: Schema = {
-	label: 'Mate van doorhangende takken',
+export const SUCKER_BRANCHES_GRADE_SCHEMA: Schema = {
+	label: 'Vorming van zuigers en/of elleboogtakken',
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
 
-export const SUCKER_BRANCHES_GRADE_SCHEMA: Schema = {
-	label: 'Vorming van zuigers en/of elleboogtakken',
+export const MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA: Schema = {
+	label: 'Vorming van takparen -of kransen',
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
 
@@ -90,7 +91,12 @@ export const CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA: Schema = {
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };
 
-export const MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA: Schema = {
-	label: 'Vorming van takparen -of kransen',
+export const SAGGING_BRANCHES_GRADE_SCHEMA: Schema = {
+	label: 'Mate van doorhangende takken',
+	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
+};
+
+export const EASY_CATCH_ON_GRADE_SCHEMA: Schema = {
+	label: 'Mate van gemakkelijk aanslaan',
 	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
 };

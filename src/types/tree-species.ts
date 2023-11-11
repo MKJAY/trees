@@ -20,6 +20,7 @@ export interface TreeSpecies {
 		suckerBranchesGradeSchema?: Schema;
 		coDominantStemsWithIncludedBarkGradeSchema?: Schema;
 		multipleBranchesOnSameHeightGradeSchema?: Schema;
+		easyCatchOnGradeSchema?: Schema;
 	};
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];

@@ -5,6 +5,7 @@ import {
 	BRANCH_BREAK_TOLERANCE_SCHEMA,
 	COASTAL_WIND_TOLERANCE_SCHEMA,
 	CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
+	EASY_CATCH_ON_GRADE_SCHEMA,
 	MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 	SAGGING_BRANCHES_GRADE_SCHEMA,
 	SALT_IN_SOIL_TOLERANCE_SCHEMA,
@@ -44,6 +45,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -156,6 +162,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -253,6 +264,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -332,6 +348,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -412,6 +433,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -492,6 +517,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -577,6 +606,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -658,6 +691,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -744,6 +782,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -826,6 +869,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -911,6 +959,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -993,6 +1046,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1074,6 +1132,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1153,6 +1216,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1245,6 +1313,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1335,6 +1408,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1412,6 +1489,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1493,6 +1575,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1574,6 +1661,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -1653,6 +1744,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1732,6 +1828,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1813,6 +1914,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1893,6 +1999,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -1975,6 +2086,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2061,6 +2177,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2140,6 +2261,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2227,6 +2352,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2311,6 +2441,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2391,6 +2526,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2471,6 +2611,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -2556,6 +2701,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2634,6 +2783,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2712,6 +2866,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2792,6 +2951,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2873,6 +3037,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -2958,6 +3127,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3043,6 +3217,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3122,6 +3301,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3211,6 +3395,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3300,6 +3489,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3380,6 +3574,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3462,6 +3661,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3543,6 +3747,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3633,6 +3842,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3715,6 +3929,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3796,6 +4015,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3879,6 +4103,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -3962,6 +4191,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4046,6 +4280,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4129,6 +4368,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4212,6 +4456,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -4297,6 +4545,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -4377,6 +4629,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -4459,6 +4715,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4541,6 +4802,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4623,6 +4889,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4707,6 +4978,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4790,6 +5066,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4873,6 +5154,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -4954,6 +5240,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5039,6 +5330,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5121,6 +5417,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5202,6 +5503,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5281,6 +5587,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5364,6 +5675,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5445,6 +5761,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5527,6 +5848,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5615,6 +5941,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5697,6 +6028,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5781,6 +6117,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5864,6 +6205,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -5947,6 +6293,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6031,6 +6382,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6120,6 +6476,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6199,6 +6559,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6280,6 +6644,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6362,6 +6730,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6441,6 +6814,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6521,6 +6899,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6600,6 +6983,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6683,6 +7071,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6766,6 +7159,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6852,6 +7250,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -6934,6 +7337,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -7037,6 +7445,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7121,6 +7533,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7210,6 +7626,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7295,6 +7715,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7375,6 +7799,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7458,6 +7886,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7559,6 +7991,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [0]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [2]
@@ -7642,6 +8078,10 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [2]
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -7728,6 +8168,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -7815,6 +8260,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -7896,6 +8346,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -7976,6 +8431,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -8059,6 +8519,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -8142,6 +8607,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -8225,6 +8695,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -8307,6 +8782,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
@@ -8389,6 +8869,11 @@ export const TREE_SPECIES: TreeSpecies[] = [
 			}
 		],
 		speciesSpecificCharacteristicSchemas: {
+			easyCatchOnGradeSchema: {
+				...EASY_CATCH_ON_GRADE_SCHEMA,
+				activeBlockIndexes: [1],
+				isDisabled: true
+			},
 			multipleBranchesOnSameHeightGradeSchema: {
 				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
 				activeBlockIndexes: [1],
