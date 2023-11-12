@@ -5,23 +5,7 @@ export interface TreeSpecies {
 	otherDutchNames?: string[];
 	crossedTreeSpeciesScientificNames?: string[];
 	images?: Image[];
-	speciesSpecificCharacteristicSchemas: {
-		soilCompactionToleranceSchema?: Schema;
-		saltInSoilToleranceSchema?: Schema;
-		saltSprayToleranceSchema?: Schema;
-		coastalWindToleranceSchema?: Schema;
-		windthrowToleranceSchema?: Schema;
-		branchBreakToleranceSchema?: Schema;
-		airPollutionToleranceSchema?: Schema;
-		springFrostToleranceSchema?: Schema;
-		bleedingToleranceSchema?: Schema;
-		waterShootsGradeSchema?: Schema;
-		saggingBranchesGradeSchema?: Schema;
-		suckerBranchesGradeSchema?: Schema;
-		coDominantStemsWithIncludedBarkGradeSchema?: Schema;
-		multipleBranchesOnSameHeightGradeSchema?: Schema;
-		easyCatchOnGradeSchema?: Schema;
-	};
+	speciesSpecificCharacteristicSchemas: SpeciesSpecificCharacteristicSchemas;
 	determinationCharacteristics?: string[];
 	similarTreeSpecies?: SimilarTreeSpecies[];
 	notes?: string[];
@@ -38,10 +22,28 @@ export interface Image {
 	source: string;
 }
 
+export interface SpeciesSpecificCharacteristicSchemas {
+	soilCompactionToleranceSchema: Schema;
+	saltInSoilToleranceSchema: Schema;
+	saltSprayToleranceSchema: Schema;
+	coastalWindToleranceSchema: Schema;
+	windthrowToleranceSchema: Schema;
+	branchBreakToleranceSchema: Schema;
+	airPollutionToleranceSchema: Schema;
+	springFrostToleranceSchema: Schema;
+	bleedingToleranceSchema: Schema;
+	waterShootsGradeSchema: Schema;
+	suckerBranchesGradeSchema: Schema;
+	multipleBranchesOnSameHeightGradeSchema: Schema;
+	coDominantStemsWithIncludedBarkGradeSchema: Schema;
+	saggingBranchesGradeSchema: Schema;
+	easyCatchOnGradeSchema: Schema;
+}
+
 export interface Schema {
 	label: string;
 	blockLabels: string[];
-	activeBlockIndexes?: number[];
+	activeBlockIndexes: number[];
 	isDisabled?: boolean;
 }
 

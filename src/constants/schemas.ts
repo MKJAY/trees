@@ -1,22 +1,4 @@
-import type { Schema } from '../types/tree-species';
-
-export const SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMA_NAMES: string[] = [
-	'soilCompactionToleranceSchema',
-	'saltInSoilToleranceSchema',
-	'saltSprayToleranceSchema',
-	'coastalWindToleranceSchema',
-	'windthrowToleranceSchema',
-	'branchBreakToleranceSchema',
-	'airPollutionToleranceSchema',
-	'springFrostToleranceSchema',
-	'bleedingToleranceSchema',
-	'waterShootsGradeSchema',
-	'suckerBranchesGradeSchema',
-	'multipleBranchesOnSameHeightGradeSchema',
-	'coDominantStemsWithIncludedBarkGradeSchema',
-	'saggingBranchesGradeSchema',
-	'easyCatchOnGradeSchema'
-];
+import type { SpeciesSpecificCharacteristicSchemas } from '../types/tree-species';
 
 const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 	'Minder tolerant',
@@ -26,77 +8,96 @@ const TOLERANCE_SCHEMA_BLOCK_LABELS: string[] = [
 
 const GRADE_SCHEMA_BLOCK_LABELS: string[] = ['Zwak', 'Matig', 'Sterk'];
 
-export const SOIL_COMPACTION_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor bodemverdichting',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const SALT_IN_SOIL_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor zout in de bodem',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const SALT_SPRAY_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor spatzout tegen de stam',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const COASTAL_WIND_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor zeewind',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const WINDTHROW_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor windworp',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const BRANCH_BREAK_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor takbreuk',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const AIR_POLLUTION_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor luchtvervuiling',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const SPRING_FROST_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor voorjaarsvorst',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const BLEEDING_TOLERANCE_SCHEMA: Schema = {
-	label: 'Tolerantie voor bloeden',
-	blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS
-};
-
-export const WATER_SHOOTS_GRADE_SCHEMA: Schema = {
-	label: 'Vorming van waterlot',
-	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
-};
-
-export const SUCKER_BRANCHES_GRADE_SCHEMA: Schema = {
-	label: 'Vorming van zuigers en/of elleboogtakken',
-	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
-};
-
-export const MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA: Schema = {
-	label: 'Vorming van takparen -of kransen',
-	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
-};
-
-export const CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA: Schema = {
-	label: 'Vorming van plakoksels',
-	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
-};
-
-export const SAGGING_BRANCHES_GRADE_SCHEMA: Schema = {
-	label: 'Mate van doorhangende takken',
-	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
-};
-
-export const EASY_CATCH_ON_GRADE_SCHEMA: Schema = {
-	label: 'Mate van gemakkelijk aanslaan',
-	blockLabels: GRADE_SCHEMA_BLOCK_LABELS
-};
+export const DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS: SpeciesSpecificCharacteristicSchemas =
+	{
+		soilCompactionToleranceSchema: {
+			label: 'Tolerantie voor bodemverdichting',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [0],
+			isDisabled: true
+		},
+		saltInSoilToleranceSchema: {
+			label: 'Tolerantie voor zout in de bodem',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [0],
+			isDisabled: true
+		},
+		saltSprayToleranceSchema: {
+			label: 'Tolerantie voor spatzout tegen de stam',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [0],
+			isDisabled: true
+		},
+		coastalWindToleranceSchema: {
+			label: 'Tolerantie voor zeewind',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [0],
+			isDisabled: true
+		},
+		windthrowToleranceSchema: {
+			label: 'Tolerantie voor windworp',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		branchBreakToleranceSchema: {
+			label: 'Tolerantie voor takbreuk',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		airPollutionToleranceSchema: {
+			label: 'Tolerantie voor luchtvervuiling',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [0],
+			isDisabled: true
+		},
+		springFrostToleranceSchema: {
+			label: 'Tolerantie voor voorjaarsvorst',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		bleedingToleranceSchema: {
+			label: 'Tolerantie voor bloeden',
+			blockLabels: TOLERANCE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		waterShootsGradeSchema: {
+			label: 'Vorming van waterlot',
+			blockLabels: GRADE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		suckerBranchesGradeSchema: {
+			label: 'Vorming van zuigers en/of elleboogtakken',
+			blockLabels: GRADE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		multipleBranchesOnSameHeightGradeSchema: {
+			label: 'Vorming van takparen -of kransen',
+			blockLabels: GRADE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		coDominantStemsWithIncludedBarkGradeSchema: {
+			label: 'Vorming van plakoksels',
+			blockLabels: GRADE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		saggingBranchesGradeSchema: {
+			label: 'Mate van doorhangende takken',
+			blockLabels: GRADE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		},
+		easyCatchOnGradeSchema: {
+			label: 'Mate van gemakkelijk aanslaan',
+			blockLabels: GRADE_SCHEMA_BLOCK_LABELS,
+			activeBlockIndexes: [1],
+			isDisabled: true
+		}
+	};

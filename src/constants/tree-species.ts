@@ -1,21 +1,6 @@
 import type { TreeSpecies } from '../types/tree-species';
-import {
-	AIR_POLLUTION_TOLERANCE_SCHEMA,
-	BLEEDING_TOLERANCE_SCHEMA,
-	BRANCH_BREAK_TOLERANCE_SCHEMA,
-	COASTAL_WIND_TOLERANCE_SCHEMA,
-	CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-	EASY_CATCH_ON_GRADE_SCHEMA,
-	MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-	SAGGING_BRANCHES_GRADE_SCHEMA,
-	SALT_IN_SOIL_TOLERANCE_SCHEMA,
-	SALT_SPRAY_TOLERANCE_SCHEMA,
-	SOIL_COMPACTION_TOLERANCE_SCHEMA,
-	SPRING_FROST_TOLERANCE_SCHEMA,
-	SUCKER_BRANCHES_GRADE_SCHEMA,
-	WATER_SHOOTS_GRADE_SCHEMA,
-	WINDTHROW_TOLERANCE_SCHEMA
-} from './schemas';
+import { copy } from '../utils/common';
+import { DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS } from './schemas';
 
 export const TREE_SPECIES: TreeSpecies[] = [
 	{
@@ -44,83 +29,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/abies-alba/bark-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		determinationCharacteristics: [
 			'Twee wit-grijze strepen aan de onderkant van de naalden',
 			'Citrusgeur bij het kneuzen van de naalden'
@@ -161,83 +70,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/abies-grandis/bark-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		determinationCharacteristics: [
 			'Twee wit-grijze strepen aan de onderkant van de naalden',
 			'Citrusgeur bij het kneuzen van de naalden en twijgen'
@@ -263,78 +96,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-campestre/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -347,79 +128,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/robinia-pseudoacacia/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -432,79 +157,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-robur/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -516,80 +185,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-petraea/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -605,80 +214,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-rubra/leaf-2.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -690,81 +239,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/alnus-cordata/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -781,81 +266,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/alnus-glutinosa/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -868,81 +289,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/alnus-incana/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -958,82 +315,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/alnus-x-spaethii-'spaeth'/leaf-1.webp"
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1045,79 +334,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/gleditsia-triacanthos/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1131,79 +364,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/platanus-x-hispanica/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.airPollutionToleranceSchema.activeBlockIndexes = [1];
+			schemas.airPollutionToleranceSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1215,81 +392,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-pendula/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		similarTreeSpecies: [
 			{
 				scientificName: 'Betula pubescens',
@@ -1312,82 +425,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/styphnolobium-japonicum/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1407,76 +452,32 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-alba/leaf-3.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1488,81 +489,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ginkgo-biloba/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.airPollutionToleranceSchema.activeBlockIndexes = [1];
+			schemas.airPollutionToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1574,81 +511,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ailanthus-altissima/leaf-1.png'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1660,78 +533,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-excelsior/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1743,79 +564,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/crataegus-monogyna/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1827,81 +592,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sorbus-aucuparia/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1913,79 +614,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fagus-sylvatica/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -1998,81 +643,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/carpinus-betulus/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2085,81 +666,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/aesculus-hippocastanum/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2176,78 +693,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-avium/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2260,81 +725,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/salix-alba/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2351,79 +752,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-cordata/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2440,80 +785,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-platyphyllos/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2525,78 +810,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-tomentosa/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.coDominantStemsWithIncludedBarkGradeSchema.activeBlockIndexes = [2];
+			schemas.coDominantStemsWithIncludedBarkGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2610,80 +843,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/tilia-x-europaea/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2700,76 +873,32 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-nigra/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2782,78 +911,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-pseudoplatanus/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2865,79 +942,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-platanoides/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [2];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -2950,81 +971,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/aesculus-x-carnea/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3036,80 +993,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/platanus-orientalis/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.airPollutionToleranceSchema.activeBlockIndexes = [1];
+			schemas.airPollutionToleranceSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3126,80 +1023,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-negundo/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		notes: [
 			'Het blad kan 3, 5 of 7 deelblaadjes hebben.',
 			'De deelblaadjes kunnen meer of minder ingesneden zijn.'
@@ -3216,79 +1053,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-saccharinum/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3300,81 +1081,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-cappadocicum/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3394,81 +1111,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-x-freemanii/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3488,80 +1141,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/acer-rubrum/leaf-3.JPG'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3573,81 +1166,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-utilis/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3660,81 +1189,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-nigra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3746,81 +1211,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/betula-pubescens/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		similarTreeSpecies: [
 			{
 				scientificName: 'Betula pendula',
@@ -3841,81 +1242,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/castanea-sativa/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -3928,80 +1265,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/catalpa-bignonioides/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4014,83 +1291,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/cedrus-libani/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -4102,82 +1303,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/cercidiphyllum-japonicum/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4190,83 +1323,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/chamaecyparis-lawsoniana/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -4279,82 +1336,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/corylus-colurna/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4367,83 +1356,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/davidia-involucrata/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -4455,79 +1368,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-angustifolia/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4544,79 +1401,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-ornus/flower-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4628,80 +1429,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/fraxinus-americana/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4714,81 +1455,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/juglans-regia/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4801,81 +1478,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/juglans-nigra/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -4888,83 +1501,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/koelreuteria-paniculata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -4977,82 +1514,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/laburnum-x-watereri/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5065,83 +1534,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/larix-decidua/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -5153,80 +1546,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/liquidambar-styraciflua/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5239,81 +1572,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/liriodendron-tulipifera/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5329,82 +1598,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/magnolia-kobus/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5416,82 +1617,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/malus-sylvestris/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		}
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})()
 	},
 	{
 		scientificName: "Malus 'Golden Hornet'",
@@ -5502,78 +1635,26 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/malus-'golden hornet'/leaf-1.jpg"
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.soilCompactionToleranceSchema.activeBlockIndexes = [1];
+			schemas.soilCompactionToleranceSchema.isDisabled = false;
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [0];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5586,83 +1667,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/metasequoia-glyptostroboides/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -5674,81 +1679,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/morus-alba/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5760,81 +1701,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/morus-nigra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.saltSprayToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltSprayToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -5847,83 +1724,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/nothofagus-antarctica/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -5940,82 +1741,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ostrya-carpinifolia/flower-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6027,83 +1760,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/parrotia-persica/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -6116,83 +1773,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/paulownia-tomentosa/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -6204,83 +1785,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/picea-abies/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -6292,83 +1797,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pinus-nigra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -6381,83 +1810,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pinus-sylvestris/leaf-1.webp'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -6475,77 +1828,29 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-x-canescens/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6558,77 +1863,29 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-tremula/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6643,77 +1900,29 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/populus-x-canadensis/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			schemas.saggingBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.saggingBranchesGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6729,79 +1938,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-cerasifera/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6813,79 +1966,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-serrulata/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6898,79 +1995,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-padus/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -6982,79 +2023,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/prunus-serotina/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.windthrowToleranceSchema.activeBlockIndexes = [0];
+			schemas.windthrowToleranceSchema.isDisabled = false;
+
+			schemas.branchBreakToleranceSchema.activeBlockIndexes = [0];
+			schemas.branchBreakToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7070,82 +2055,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pseudotsuga-menziesii/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7158,82 +2075,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pterocarya-fraxinifolia/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.bleedingToleranceSchema.activeBlockIndexes = [0];
+			schemas.bleedingToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7249,80 +2098,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pyrus-calleryana/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7336,79 +2125,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/pyrus-communis/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		}
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.soilCompactionToleranceSchema.activeBlockIndexes = [1];
+			schemas.soilCompactionToleranceSchema.isDisabled = false;
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})()
 	},
 	{
 		scientificName: 'Quercus cerris',
@@ -7444,79 +2177,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-cerris/leaf-7.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7532,80 +2209,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-frainetto/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7625,80 +2242,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-palustris/leaf-3.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7714,79 +2271,23 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-ilex/leaf-2.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7798,80 +2299,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-phellos/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7885,80 +2326,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/quercus-x-turneri-'pseudoturneri'/leaf-1.jpeg"
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -7990,80 +2371,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/quercus-x-hispanica/leaf-5.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [1];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.multipleBranchesOnSameHeightGradeSchema.activeBlockIndexes = [2];
+			schemas.multipleBranchesOnSameHeightGradeSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [0];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8077,81 +2398,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: "images/salix-x-sepulcralis-'chrysocoma'/leaf-1.jpeg"
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.easyCatchOnGradeSchema.activeBlockIndexes = [2];
+			schemas.easyCatchOnGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8167,83 +2424,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sequoiadendron-giganteum/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -8259,81 +2440,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sorbus-aria/leaf-2.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8345,80 +2462,20 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/sorbus-intermedia/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.coastalWindToleranceSchema.activeBlockIndexes = [2];
+			schemas.coastalWindToleranceSchema.isDisabled = false;
+
+			schemas.waterShootsGradeSchema.activeBlockIndexes = [2];
+			schemas.waterShootsGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8430,82 +2487,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/taxodium-distichum/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8518,83 +2507,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/taxus-baccata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	},
 	{
@@ -8606,82 +2519,14 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/thuja-plicata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8694,81 +2539,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ulmus-minor/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8781,81 +2562,17 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/ulmus-glabra/leaf-1.jpg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [2]
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0]
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: (() => {
+			const schemas = copy(DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS);
+
+			schemas.saltInSoilToleranceSchema.activeBlockIndexes = [0];
+			schemas.saltInSoilToleranceSchema.isDisabled = false;
+
+			schemas.suckerBranchesGradeSchema.activeBlockIndexes = [2];
+			schemas.suckerBranchesGradeSchema.isDisabled = false;
+
+			return schemas;
+		})(),
 		isETW: true
 	},
 	{
@@ -8868,83 +2585,7 @@ export const TREE_SPECIES: TreeSpecies[] = [
 				source: 'images/zelkova-serrata/leaf-1.jpeg'
 			}
 		],
-		speciesSpecificCharacteristicSchemas: {
-			easyCatchOnGradeSchema: {
-				...EASY_CATCH_ON_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			multipleBranchesOnSameHeightGradeSchema: {
-				...MULTIPLE_BRANCHES_ON_SAME_HEIGHT_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			coDominantStemsWithIncludedBarkGradeSchema: {
-				...CO_DOMINANT_STEMS_WITH_INCLUDED_BARK_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			suckerBranchesGradeSchema: {
-				...SUCKER_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			saggingBranchesGradeSchema: {
-				...SAGGING_BRANCHES_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			bleedingToleranceSchema: {
-				...BLEEDING_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			waterShootsGradeSchema: {
-				...WATER_SHOOTS_GRADE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			soilCompactionToleranceSchema: {
-				...SOIL_COMPACTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltInSoilToleranceSchema: {
-				...SALT_IN_SOIL_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			saltSprayToleranceSchema: {
-				...SALT_SPRAY_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			coastalWindToleranceSchema: {
-				...COASTAL_WIND_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			windthrowToleranceSchema: {
-				...WINDTHROW_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			branchBreakToleranceSchema: {
-				...BRANCH_BREAK_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			},
-			airPollutionToleranceSchema: {
-				...AIR_POLLUTION_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [0],
-				isDisabled: true
-			},
-			springFrostToleranceSchema: {
-				...SPRING_FROST_TOLERANCE_SCHEMA,
-				activeBlockIndexes: [1],
-				isDisabled: true
-			}
-		},
+		speciesSpecificCharacteristicSchemas: DEFAULT_SPECIES_SPECIFIC_CHARACTERISTIC_SCHEMAS,
 		isETW: true
 	}
 ];
